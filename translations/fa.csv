@@ -1104,7 +1104,7 @@ Filter based on item,در مورد فیلتر
 Final Confirmation Date,تاریخ تایید نهایی
 Financial Analytics,تجزیه و تحلیل مالی
 Financial Statements,صورتهای مالی
-Finder,یاب
+Finder,یابنده
 First Name,نام
 First Responded On,اول در پاسخ
 Fiscal Year,سال مالی
@@ -3506,3 +3506,4 @@ yyyy-mm-dd,yyyy-میلیمتر-dd
 zoom-in,زوم در
 zoom-out,زوم کردن
 "The unique id for tracking all recurring invoices. It is generated on submit.","""The unique id for tracking all recurring invoices. It is generated on submit."""
+owrang,اورنگ

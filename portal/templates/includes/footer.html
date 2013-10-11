@@ -1,6 +1,6 @@
 {% extends "lib/website/templates/includes/footer.html" %}
 
-{% block powered %}<a style="font-size: 90%; color: #aaa;" href="http://erpnext.org">ERPNext Powered</a>{% endblock %}
+{% block powered %}<a style="font-size: 90%; color: #aaa;" href="http://owrang.org">Owrang Powered</a>{% endblock %}
 
 {% block extension %}
 <br>
@@ -19,7 +19,7 @@
 			.attr("disabled", true);
 
 		if($("#footer-subscribe-email").val()) {
-			erpnext.send_message({
+			owrang.send_message({
 				subject:"Subscribe me",
 				sender: $("#footer-subscribe-email").val(),
 				message: "Subscribe to newsletter (via website footer).",
