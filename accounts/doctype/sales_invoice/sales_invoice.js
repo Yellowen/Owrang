@@ -14,8 +14,8 @@ wn.require('app/utilities/doctype/sms_control/sms_control.js');
 wn.require('app/selling/doctype/sales_common/sales_common.js');
 wn.require('app/accounts/doctype/sales_invoice/pos.js');
 
-wn.provide("erpnext.accounts");
-erpnext.accounts.SalesInvoiceController = erpnext.selling.SellingController.extend({
+wn.provide("owrang.accounts");
+owrang.accounts.SalesInvoiceController = owrang.selling.SellingController.extend({
 	onload: function() {
 		this._super();
 		
@@ -190,13 +190,13 @@ erpnext.accounts.SalesInvoiceController = erpnext.selling.SellingController.exte
 	},
 
 	entries_on_form_rendered: function(doc, grid_row) {
-		erpnext.setup_serial_no(grid_row)
+		owrang.setup_serial_no(grid_row)
 	}
 
 });
 
 // for backward compatibility: combine new and previous states
-$.extend(cur_frm.cscript, new erpnext.accounts.SalesInvoiceController({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.accounts.SalesInvoiceController({frm: cur_frm}));
 
 // Hide Fields
 // ------------

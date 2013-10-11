@@ -8,14 +8,14 @@ wn.pages['support-analytics'].onload = function(wrapper) {
 		single_column: true
 	});					
 
-	new erpnext.SupportAnalytics(wrapper);
+	new owrang.SupportAnalytics(wrapper);
 	
 	wrapper.appframe.add_home_breadcrumb()
 	wrapper.appframe.add_module_icon("Support")
 	wrapper.appframe.add_breadcrumb("icon-bar-chart")
 }
 
-erpnext.SupportAnalytics = wn.views.GridReportWithPlot.extend({
+owrang.SupportAnalytics = wn.views.GridReportWithPlot.extend({
 	init: function(wrapper) {
 		this._super({
 			title: "Support Analtyics",

@@ -54,7 +54,7 @@ pscript['onload_Accounts Browser'] = function(wrapper){
 	wrapper.$company_select = wrapper.appframe.add_select("Company", [])
 		.change(function() {
 			var ctype = wn.get_route()[1] || 'Account';
-			erpnext.account_chart = new erpnext.AccountsChart(ctype, $(this).val(), 
+			owrang.account_chart = new owrang.AccountsChart(ctype, $(this).val(), 
 				chart_area.get(0));
 			pscript.set_title(wrapper, ctype, $(this).val());
 		})
@@ -84,14 +84,14 @@ pscript['onshow_Accounts Browser'] = function(wrapper){
 	// set route
 	var ctype = wn.get_route()[1] || 'Account';
 
-	if(erpnext.account_chart && erpnext.account_chart.ctype != ctype) {
+	if(owrang.account_chart && owrang.account_chart.ctype != ctype) {
 		wrapper.$company_select.change();
 	}
 	
 	pscript.set_title(wrapper, ctype);
 }
 
-erpnext.AccountsChart = Class.extend({
+owrang.AccountsChart = Class.extend({
 	init: function(ctype, company, wrapper) {
 		$(wrapper).empty();
 		var me = this;
@@ -145,20 +145,20 @@ erpnext.AccountsChart = Class.extend({
 		var node_links = [];
 		// edit
 		if (wn.model.can_read(this.ctype) !== -1) {
-			node_links.push('<a onclick="erpnext.account_chart.open();">Edit</a>');
+			node_links.push('<a onclick="owrang.account_chart.open();">Edit</a>');
 		}
 		if (data.expandable && wn.boot.profile.in_create.indexOf(this.ctype) !== -1) {
-			node_links.push('<a onclick="erpnext.account_chart.new_node();">Add Child</a>');
+			node_links.push('<a onclick="owrang.account_chart.new_node();">Add Child</a>');
 		} else if (this.ctype === 'Account' && wn.boot.profile.can_read.indexOf("GL Entry") !== -1) {
-			node_links.push('<a onclick="erpnext.account_chart.show_ledger();">View Ledger</a>');
+			node_links.push('<a onclick="owrang.account_chart.show_ledger();">View Ledger</a>');
 		}
 
 		if (this.can_write) {
-			node_links.push('<a onclick="erpnext.account_chart.rename()">Rename</a>');
+			node_links.push('<a onclick="owrang.account_chart.rename()">Rename</a>');
 		};
 	
 		if (this.can_delete) {
-			node_links.push('<a onclick="erpnext.account_chart.delete()">Delete</a>');
+			node_links.push('<a onclick="owrang.account_chart.delete()">Delete</a>');
 		};
 		
 		link.toolbar.append(node_links.join(" | "));

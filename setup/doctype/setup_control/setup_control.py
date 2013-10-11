@@ -154,7 +154,7 @@ class DocType:
 			To Do List</a>' + '"</i>', '#6B24B3')
 
 		d = Document('ToDo')
-		d.description = '<a href="#Setup">Complete ERPNext Setup</a>'
+		d.description = '<a href="#Setup">Complete Owrang Setup</a>'
 		d.priority = 'High'
 		d.date = nowdate()
 		d.save(1)

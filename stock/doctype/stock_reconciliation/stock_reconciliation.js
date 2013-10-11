@@ -2,9 +2,9 @@
 // License: GNU General Public License v3. See license.txt
 
 wn.require("public/app/js/controllers/stock_controller.js");
-wn.provide("erpnext.stock");
+wn.provide("owrang.stock");
 
-erpnext.stock.StockReconciliation = erpnext.stock.StockController.extend({
+owrang.stock.StockReconciliation = owrang.stock.StockController.extend({
 	onload: function() {
 		this.set_default_expense_account();
 	}, 
@@ -151,4 +151,4 @@ erpnext.stock.StockReconciliation = erpnext.stock.StockController.extend({
 	},
 });
 
-cur_frm.cscript = new erpnext.stock.StockReconciliation({frm: cur_frm});
+cur_frm.cscript = new owrang.stock.StockReconciliation({frm: cur_frm});

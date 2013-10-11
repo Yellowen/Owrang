@@ -13,7 +13,7 @@ wn.require('app/utilities/doctype/sms_control/sms_control.js');
 wn.require('app/selling/doctype/sales_common/sales_common.js');
 wn.require('app/accounts/doctype/sales_invoice/pos.js');
 
-erpnext.selling.QuotationController = erpnext.selling.SellingController.extend({
+owrang.selling.QuotationController = owrang.selling.SellingController.extend({
 	onload: function(doc, dt, dn) {
 		this._super(doc, dt, dn);
 		if(doc.customer && !doc.quotation_to)
@@ -95,7 +95,7 @@ erpnext.selling.QuotationController = erpnext.selling.SellingController.extend({
 	},
 });
 
-cur_frm.script_manager.make(erpnext.selling.QuotationController);
+cur_frm.script_manager.make(owrang.selling.QuotationController);
 
 cur_frm.fields_dict.lead.get_query = function(doc,cdt,cdn) {
 	return{	query:"controllers.queries.lead_query" } }

@@ -12,7 +12,7 @@ def on_login_post_session(login_manager):
 		update login_from and delete parallel sessions
 	"""
 	# Clear previous sessions i.e. logout previous log-in attempts
-	allow_multiple_sessions = ['demo@erpnext.com', 'Administrator', 'Guest']
+	allow_multiple_sessions = ['demo@owrang.yellowen.com', 'Administrator', 'Guest']
 	if webnotes.session['user'] not in allow_multiple_sessions:
 		from webnotes.sessions import clear_sessions
 		clear_sessions(webnotes.session.user, keep_current=True)
@@ -20,7 +20,7 @@ def on_login_post_session(login_manager):
 		# check if account is expired
 		check_if_expired()
 
-	if webnotes.session['user'] not in ('Guest', 'demo@erpnext.com'):
+	if webnotes.session['user'] not in ('Guest', 'demo@owrang.yellowen.com'):
 		# create feed
 		from webnotes.utils import nowtime
 		from webnotes.profile import get_user_fullname
@@ -53,10 +53,10 @@ def check_if_expired():
 	msg = """Oops! Your subscription expired on <b>%s</b>.<br>""" % formatdate(conf.expires_on)
 	
 	if 'System Manager' in webnotes.user.get_roles():
-		msg += """Just drop in a mail at <b>support@erpnext.com</b> and
+		msg += """Just drop in a mail at <b>support@owrang.yellowen.com</b> and
 			we will guide you to get your account re-activated."""
 	else:
-		msg += """Just ask your System Manager to drop in a mail at <b>support@erpnext.com</b> and
+		msg += """Just ask your System Manager to drop in a mail at <b>support@owrang.yellowen.com</b> and
 		we will guide him to get your account re-activated."""
 	
 	webnotes.msgprint(msg)

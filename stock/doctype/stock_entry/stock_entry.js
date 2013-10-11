@@ -2,9 +2,9 @@
 // License: GNU General Public License v3. See license.txt
 
 wn.require("public/app/js/controllers/stock_controller.js");
-wn.provide("erpnext.stock");
+wn.provide("owrang.stock");
 
-erpnext.stock.StockEntry = erpnext.stock.StockController.extend({		
+owrang.stock.StockEntry = owrang.stock.StockController.extend({		
 	setup: function() {
 		var me = this;
 		
@@ -34,7 +34,7 @@ erpnext.stock.StockEntry = erpnext.stock.StockController.extend({
 						}
 					};
 			} else {
-				return erpnext.queries.item({is_stock_item: "Yes"});
+				return owrang.queries.item({is_stock_item: "Yes"});
 			}
 		};
 		
@@ -58,7 +58,7 @@ erpnext.stock.StockEntry = erpnext.stock.StockController.extend({
 	
 	refresh: function() {
 		var me = this;
-		erpnext.hide_naming_series();
+		owrang.hide_naming_series();
 		this.toggle_related_fields(this.frm.doc);
 		this.toggle_enable_bom();
 		this.show_stock_ledger();
@@ -230,11 +230,11 @@ erpnext.stock.StockEntry = erpnext.stock.StockController.extend({
 	},
 	
 	mtn_details_on_form_rendered: function(doc, grid_row) {
-		erpnext.setup_serial_no(grid_row)
+		owrang.setup_serial_no(grid_row)
 	}
 });
 
-cur_frm.script_manager.make(erpnext.stock.StockEntry);
+cur_frm.script_manager.make(owrang.stock.StockEntry);
 
 cur_frm.cscript.toggle_related_fields = function(doc) {
 	disable_from_warehouse = inList(["Material Receipt", "Sales Return"], doc.purpose);

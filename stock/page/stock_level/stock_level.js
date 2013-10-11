@@ -8,7 +8,7 @@ wn.pages['stock-level'].onload = function(wrapper) {
 		single_column: true
 	});
 	
-	new erpnext.StockLevel(wrapper);
+	new owrang.StockLevel(wrapper);
 
 	wrapper.appframe.add_home_breadcrumb()
 	wrapper.appframe.add_module_icon("Stock")
@@ -17,7 +17,7 @@ wn.pages['stock-level'].onload = function(wrapper) {
 
 wn.require("app/js/stock_grid_report.js");
 
-erpnext.StockLevel = erpnext.StockGridReport.extend({
+owrang.StockLevel = owrang.StockGridReport.extend({
 	init: function(wrapper) {
 		var me = this;
 		

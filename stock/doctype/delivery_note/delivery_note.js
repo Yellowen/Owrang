@@ -12,8 +12,8 @@ wn.require('app/utilities/doctype/sms_control/sms_control.js');
 wn.require('app/selling/doctype/sales_common/sales_common.js');
 wn.require('app/accounts/doctype/sales_invoice/pos.js');
 
-wn.provide("erpnext.stock");
-erpnext.stock.DeliveryNoteController = erpnext.selling.SellingController.extend({
+wn.provide("owrang.stock");
+owrang.stock.DeliveryNoteController = owrang.selling.SellingController.extend({
 	refresh: function(doc, dt, dn) {
 		this._super();
 		
@@ -87,13 +87,13 @@ erpnext.stock.DeliveryNoteController = erpnext.selling.SellingController.extend(
 	},
 
 	delivery_note_details_on_form_rendered: function(doc, grid_row) {
-		erpnext.setup_serial_no(grid_row)
+		owrang.setup_serial_no(grid_row)
 	}
 	
 });
 
 // for backward compatibility: combine new and previous states
-$.extend(cur_frm.cscript, new erpnext.stock.DeliveryNoteController({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.stock.DeliveryNoteController({frm: cur_frm}));
 
 cur_frm.cscript.new_contact = function(){
 	tn = wn.model.make_new_doc_and_get_name('Contact');

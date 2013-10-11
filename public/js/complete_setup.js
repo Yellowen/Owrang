@@ -3,11 +3,11 @@
 
 // complete my company registration
 // --------------------------------
-wn.provide('erpnext.complete_setup');
+wn.provide('owrang.yellowen.complete_setup');
 
-$.extend(erpnext.complete_setup, {
+$.extend(owrang.yellowen.complete_setup, {
 	show: function() {
-		d = erpnext.complete_setup.prepare_dialog();
+		d = owrang.yellowen.complete_setup.prepare_dialog();
 		d.show();
 	},
 	
@@ -23,7 +23,7 @@ $.extend(erpnext.complete_setup, {
 					description:'e.g. "MC"',reqd:1},
 				{fieldname:'fy_start', label:'Financial Year Start Date', fieldtype:'Select',
 					description:'Your financial year begins on"', reqd:1,
-					options: erpnext.complete_setup.fy_start_list.join('\n')},
+					options: owrang.yellowen.complete_setup.fy_start_list.join('\n')},
 				{fieldname:'country', label: 'Country', reqd:1,
 					options: "", fieldtype: 'Select'},
 				{fieldname:'currency', label: 'Default Currency', reqd:1,
@@ -31,7 +31,7 @@ $.extend(erpnext.complete_setup, {
 				{fieldname:'timezone', label: 'Time Zone', reqd:1,
 					options: "", fieldtype: 'Select'},
 				{fieldname:'industry', label: 'Industry', reqd:1,
-					options: erpnext.complete_setup.domains.join('\n'), fieldtype: 'Select'},
+					options: owrang.yellowen.complete_setup.domains.join('\n'), fieldtype: 'Select'},
 				{fieldname:'update', label:'Setup',fieldtype:'Button'},
 			],
 		});
@@ -44,15 +44,15 @@ $.extend(erpnext.complete_setup, {
 		wn.call({
 			method:"webnotes.country_info.get_country_timezone_info",
 			callback: function(data) {
-				erpnext.country_info = data.message.country_info;
-				erpnext.all_timezones = data.message.all_timezones;
+				owrang.country_info = data.message.country_info;
+				owrang.all_timezones = data.message.all_timezones;
 				d.get_input("country").empty()
-					.add_options([""].concat(keys(erpnext.country_info).sort()));
+					.add_options([""].concat(keys(owrang.country_info).sort()));
 				d.get_input("currency").empty()
-					.add_options(wn.utils.unique([""].concat($.map(erpnext.country_info, 
+					.add_options(wn.utils.unique([""].concat($.map(owrang.country_info, 
 						function(opts, country) { return opts.currency; }))).sort());
 				d.get_input("timezone").empty()
-					.add_options([""].concat(erpnext.all_timezones));
+					.add_options([""].concat(owrang.all_timezones));
 			}
 		})
 		
@@ -88,13 +88,13 @@ $.extend(erpnext.complete_setup, {
 			$timezone.empty();
 			// add country specific timezones first
 			if(country){
-				var timezone_list = erpnext.country_info[country].timezones || [];
+				var timezone_list = owrang.country_info[country].timezones || [];
 				$timezone.add_options(timezone_list.sort());
 				
-				d.get_input("currency").val(erpnext.country_info[country].currency);
+				d.get_input("currency").val(owrang.country_info[country].currency);
 			}
 			// add all timezones at the end, so that user has the option to change it to any timezone
-			$timezone.add_options([""].concat(erpnext.all_timezones));
+			$timezone.add_options([""].concat(owrang.all_timezones));
 			
 		};
 		

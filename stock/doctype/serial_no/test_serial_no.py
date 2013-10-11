@@ -1,7 +1,7 @@
 # Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 # License: GNU General Public License v3. See license.txt
 
-# ERPNext - web based ERP (http://erpnext.com)
+# Owrang - web based ERP (http://owrang.yellowen.com)
 # For license information, please see license.txt
 
 from __future__ import unicode_literals

@@ -10,14 +10,14 @@ wn.pages['stock-balance'].onload = function(wrapper) {
 		single_column: true
 	});
 	
-	new erpnext.StockBalance(wrapper);
+	new owrang.StockBalance(wrapper);
 	
 	wrapper.appframe.add_home_breadcrumb()
 	wrapper.appframe.add_module_icon("Stock")
 	wrapper.appframe.add_breadcrumb("icon-bar-chart")
 }
 
-erpnext.StockBalance = erpnext.StockAnalytics.extend({
+owrang.StockBalance = owrang.StockAnalytics.extend({
 	init: function(wrapper) {
 		this._super(wrapper, {
 			title: "Stock Balance",

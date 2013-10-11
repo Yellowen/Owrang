@@ -14,7 +14,7 @@ wn.require('app/accounts/doctype/sales_taxes_and_charges_master/sales_taxes_and_
 wn.require('app/utilities/doctype/sms_control/sms_control.js');
 wn.require('app/accounts/doctype/sales_invoice/pos.js');
 
-erpnext.selling.SalesOrderController = erpnext.selling.SellingController.extend({
+owrang.selling.SalesOrderController = owrang.selling.SellingController.extend({
 	refresh: function(doc, dt, dn) {
 		this._super();
 		this.frm.dashboard.reset();
@@ -137,7 +137,7 @@ erpnext.selling.SalesOrderController = erpnext.selling.SellingController.extend(
 });
 
 // for backward compatibility: combine new and previous states
-$.extend(cur_frm.cscript, new erpnext.selling.SalesOrderController({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.selling.SalesOrderController({frm: cur_frm}));
 
 cur_frm.cscript.new_contact = function(){
 	tn = wn.model.make_new_doc_and_get_name('Contact');

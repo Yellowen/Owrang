@@ -3,9 +3,9 @@
 
 wn.require('app/utilities/doctype/sms_control/sms_control.js');
 
-wn.provide("erpnext.selling");
+wn.provide("owrang.selling");
 // TODO commonify this code
-erpnext.selling.Opportunity = wn.ui.form.Controller.extend({
+owrang.selling.Opportunity = wn.ui.form.Controller.extend({
 	onload: function() {
 		if(!this.frm.doc.enquiry_from && this.frm.doc.customer)
 			this.frm.doc.enquiry_from = "Customer";
@@ -50,7 +50,7 @@ erpnext.selling.Opportunity = wn.ui.form.Controller.extend({
 		var me = this;
 		
 		if(this.frm.fields_dict.contact_by.df.options.match(/^Profile/)) {
-			this.frm.set_query("contact_by", erpnext.queries.profile);
+			this.frm.set_query("contact_by", owrang.queries.profile);
 		}
 		
 		this.frm.set_query("customer_address", function() {
@@ -70,7 +70,7 @@ erpnext.selling.Opportunity = wn.ui.form.Controller.extend({
 			["customer", "customer"],
 			["contact_person", "customer_filter"],
 			["territory", "not_a_group_filter"]], function(i, opts) {
-				me.frm.set_query(opts[0], erpnext.queries[opts[1]]);
+				me.frm.set_query(opts[0], owrang.queries[opts[1]]);
 			});
 	},
 	
@@ -97,10 +97,10 @@ erpnext.selling.Opportunity = wn.ui.form.Controller.extend({
 	}
 });
 
-$.extend(cur_frm.cscript, new erpnext.selling.Opportunity({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.selling.Opportunity({frm: cur_frm}));
 
 cur_frm.cscript.refresh = function(doc, cdt, cdn){
-	erpnext.hide_naming_series();
+	owrang.hide_naming_series();
 
 	cur_frm.dashboard.reset(doc);
 	if(!doc.__islocal) {

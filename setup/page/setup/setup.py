@@ -225,7 +225,7 @@ items = [
 		"title": "System Administration",
 		"icon": "icon-cog"
 	},
-	{ "title": "Update ERPNext", 
+	{ "title": "Update Owrang", 
 		"route": "update-manager", "type": "Link", "icon": "icon-rss" },
 	{ "title": "Manage 3rd Party Backups", 
 		"route": "Form/Backup Manager", "type": "Link", "icon": "icon-cloud" },

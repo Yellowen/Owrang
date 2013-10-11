@@ -9,7 +9,7 @@ wn.pages['stock-analytics'].onload = function(wrapper) {
 		single_column: true
 	});
 
-	new erpnext.StockAnalytics(wrapper);
+	new owrang.StockAnalytics(wrapper);
 
 	wrapper.appframe.add_home_breadcrumb()
 	wrapper.appframe.add_module_icon("Stock")

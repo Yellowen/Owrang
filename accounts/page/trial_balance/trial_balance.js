@@ -9,7 +9,7 @@ wn.pages['trial-balance'].onload = function(wrapper) {
 		title: 'Trial Balance',
 		single_column: true
 	});
-	var TrialBalance = erpnext.AccountTreeGrid.extend({
+	var TrialBalance = owrang.AccountTreeGrid.extend({
 		init: function(wrapper, title) {
 			var me = this;
 			this._super(wrapper, title);
@@ -43,7 +43,7 @@ wn.pages['trial-balance'].onload = function(wrapper) {
 			}
 		},
 	})
-	erpnext.trial_balance = new TrialBalance(wrapper, 'Trial Balance');
+	owrang.trial_balance = new TrialBalance(wrapper, 'Trial Balance');
 	
 	wrapper.appframe.add_home_breadcrumb()
 	wrapper.appframe.add_module_icon("Accounts")

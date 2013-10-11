@@ -1,7 +1,7 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-erpnext.fs = {}
+owrang.fs = {}
 
 pscript['onload_Financial Statements'] = function(wrapper) {
 	wn.ui.make_app_page({
@@ -10,25 +10,25 @@ pscript['onload_Financial Statements'] = function(wrapper) {
 		"single_column": true,
 	});
 	
-	erpnext.fs.stmt_type = wrapper.appframe.add_field({
+	owrang.fs.stmt_type = wrapper.appframe.add_field({
 		fieldtype:"Select",
 		fieldname:"stmt_type",
 		options: ['Select Statement...','Balance Sheet','Profit & Loss']
 	})
 
-	erpnext.fs.stmt_company = wrapper.appframe.add_field({
+	owrang.fs.stmt_company = wrapper.appframe.add_field({
 		fieldtype:"Select",
 		fieldname:"stmt_company",
 		options: ['Loading Companies...']
 	})
 
-	erpnext.fs.stmt_period = wrapper.appframe.add_field({
+	owrang.fs.stmt_period = wrapper.appframe.add_field({
 		fieldtype:"Select",
 		fieldname:"stmt_period",
 		options: ['Select Period...', 'Annual', 'Quarterly', 'Monthly']
 	})
 
-	erpnext.fs.stmt_fiscal_year = wrapper.appframe.add_field({
+	owrang.fs.stmt_fiscal_year = wrapper.appframe.add_field({
 		fieldtype:"Select",
 		fieldname:"stmt_fiscal_year",
 		options: ['Loading...']
@@ -51,9 +51,9 @@ pscript['onload_Financial Statements'] = function(wrapper) {
   // load companies
   return $c_obj('MIS Control','get_comp','', function(r,rt) {    
     // company
-	erpnext.fs.stmt_company.$input.empty()
+	owrang.fs.stmt_company.$input.empty()
 		.add_options(['Select Company...'].concat(r.message.company));
-	erpnext.fs.stmt_fiscal_year.$input.empty()
+	owrang.fs.stmt_fiscal_year.$input.empty()
 		.add_options(['Select Year...'].concat(r.message.fiscal_year));
   });
 
@@ -64,27 +64,27 @@ pscript.stmt_new = function(stmt,company_name,level,period,year) {
   $i('stmt_tree').innerHTML = 'Refreshing....';
   $i('stmt_tree').style.display = 'block';
   
-  var company =erpnext.fs.stmt_company.get_value();
+  var company =owrang.fs.stmt_company.get_value();
 
   var arg = {
-  	statement: erpnext.fs.stmt_type.get_value(),
+  	statement: owrang.fs.stmt_type.get_value(),
   	company: company,
-  	period: erpnext.fs.stmt_period.get_value(),
-  	year: erpnext.fs.stmt_fiscal_year.get_value()
+  	period: owrang.fs.stmt_period.get_value(),
+  	year: owrang.fs.stmt_fiscal_year.get_value()
   }
 
   return $c_obj('MIS Control', 'get_statement', docstring(arg), function(r,rt) {
       var nl = r.message;
       var t = $i('stmt_tree');
-      var stmt_type = erpnext.fs.stmt_type.get_value();
+      var stmt_type = owrang.fs.stmt_type.get_value();
       t.innerHTML = '';
       var tab = $a($a(t, 'div'),'table','stmt_table');
       tab.style.tableLayout = 'fixed';
       tab.style.width = '100%';
       
-      $i('stmt_title1').innerHTML = erpnext.fs.stmt_company.get_value()
-      $i('stmt_title2').innerHTML = erpnext.fs.stmt_type.get_value() 
-		+ ' - ' + erpnext.fs.stmt_fiscal_year.get_value();
+      $i('stmt_title1').innerHTML = owrang.fs.stmt_company.get_value()
+      $i('stmt_title2').innerHTML = owrang.fs.stmt_type.get_value() 
+		+ ' - ' + owrang.fs.stmt_fiscal_year.get_value();
       for(i=0;i<nl.length;i++) {
         tab.insertRow(i);
         
@@ -121,9 +121,9 @@ pscript.stmt_new = function(stmt,company_name,level,period,year) {
               if (i==0) 
 				per.innerHTML = (nl[i][j]+'').bold();
               else if(nl[i][0] == 1 || nl[i][0] == 4) 
-				per.innerHTML = format_currency(nl[i][j], erpnext.get_currency(company)).bold();
+				per.innerHTML = format_currency(nl[i][j], owrang.get_currency(company)).bold();
               else 
-				per.innerHTML = format_currency(nl[i][j], erpnext.get_currency(company))
+				per.innerHTML = format_currency(nl[i][j], owrang.get_currency(company))
             } else
               per.innerHTML = '-';
           }

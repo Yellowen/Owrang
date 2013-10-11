@@ -1,11 +1,11 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-wn.provide("erpnext.projects");
+wn.provide("owrang.projects");
 
 cur_frm.add_fetch("project", "company", "company");
 
-erpnext.projects.Task = wn.ui.form.Controller.extend({
+owrang.projects.Task = wn.ui.form.Controller.extend({
 	setup: function() {
 		this.frm.fields_dict.project.get_query = function() {
 			return {
@@ -28,5 +28,5 @@ erpnext.projects.Task = wn.ui.form.Controller.extend({
 });
 
 
-cur_frm.cscript = new erpnext.projects.Task({frm: cur_frm});
+cur_frm.cscript = new owrang.projects.Task({frm: cur_frm});
 

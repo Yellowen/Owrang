@@ -972,7 +972,7 @@ Enter designation of this Contact,Унесите назив овог конта�
 "Enter email id separated by commas, invoice will be mailed automatically on particular date","Унесите ид е раздвојених зарезима, фактура ће аутоматски бити послат на одређени датум"
 Enter items and planned qty for which you want to raise production orders or download raw materials for analysis.,Унесите ставке и планирани Кол за које желите да подигне наређења производне или преузети сировине за анализу.
 Enter name of campaign if source of enquiry is campaign,"Унесите назив кампање, ако извор истраге је кампања"
-"Enter static url parameters here (Eg. sender=ERPNext, username=ERPNext, password=1234 etc.)","Унесите статичке параметре овде УРЛ адресу (нпр. пошиљалац = ЕРПНект, усернаме = ЕРПНект, лозинком = 1234 итд)"
+"Enter static url parameters here (Eg. sender=Owrang, username=Owrang, password=1234 etc.)","Унесите статичке параметре овде УРЛ адресу (нпр. пошиљалац = ЕРПНект, усернаме = ЕРПНект, лозинком = 1234 итд)"
 Enter the company name under which Account Head will be created for this Supplier,Унесите назив предузећа под којима ће налог бити шеф креирали за ову добављача
 Enter the date by which payments from customer is expected against this invoice.,Унесите датум до којег се исплате из купац очекује од ове фактуре.
 Enter url parameter for message,Унесите УРЛ параметар за поруке
@@ -2628,7 +2628,7 @@ Set Value,Сет Валуе
 Set prefix for numbering series on your transactions,Сет префикс за нумерисање серију на својим трансакцијама
 Set targets Item Group-wise for this Sales Person.,Поставите циљеве ставку Групе мудро ову особу продаје.
 "Set your background color, font and image (tiled)","Поставите позадином, фонт и слике (поплочан)"
-"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use ERPNext servers (emails will still be sent from your email id) or contact your email provider.","Поставите овде своје одлазне поште СМТП подешавања. Све систем генерише обавештења, емаил-ови ће отићи са овог маил сервера. Ако нисте сигурни, оставите ово празно да бисте користили ЕРПНект сервере (е-маил поруке и даље ће бити послате са вашег Емаил ИД) или се обратите свом провајдеру е-поште."
+"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use Owrang servers (emails will still be sent from your email id) or contact your email provider.","Поставите овде своје одлазне поште СМТП подешавања. Све систем генерише обавештења, емаил-ови ће отићи са овог маил сервера. Ако нисте сигурни, оставите ово празно да бисте користили ЕРПНект сервере (е-маил поруке и даље ће бити послате са вашег Емаил ИД) или се обратите свом провајдеру е-поште."
 Setting Account Type helps in selecting this Account in transactions.,Подешавање Тип налога помаже у одабиру овог рачуна у трансакцијама.
 Settings,Подешавања
 Settings for About Us Page.,Подешавања за О нама страна.
@@ -2764,7 +2764,7 @@ Style,Стил
 Style Settings,Стиле Подешавања
 "Style represents the button color: Success - Green, Danger - Red, Inverse - Black, Primary - Dark Blue, Info - Light Blue, Warning - Orange","Стил представља дугме боју: Успех - зелени, опасности - Црвена, Инверсе - црна, Примарни - Тамно Плава, Инфо - светло плава, Упозорење - Оранге"
 "Sub-currency. For e.g. ""Cent""",Под-валута. За пример &quot;цент&quot;
-Sub-domain provided by erpnext.com,Под-домена пружају ерпнект.цом
+Sub-domain provided by owrang.yellowen.com,Под-домена пружају ерпнект.цом
 Subcontract,Подуговор
 Subdomain,Поддомен
 Subject,Предмет
@@ -3318,7 +3318,7 @@ english,енглески
 envelope,коверат
 español,Еспанол
 example: Next Day Shipping,Пример: Нект Даи Схиппинг
-example: http://help.erpnext.com,Пример: хттп://хелп.ерпнект.цом
+example: http://help.owrang.yellowen.com,Пример: хттп://хелп.ерпнект.цом
 exclamation-sign,узвик-знак
 eye-close,ока близу
 eye-open,ока отворити

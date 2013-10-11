@@ -2,10 +2,10 @@
 // License: GNU General Public License v3. See license.txt
 
 
-wn.provide("erpnext.stock");
+wn.provide("owrang.stock");
 wn.require("public/app/js/controllers/stock_controller.js");
 
-erpnext.stock.LandedCostWizard = erpnext.stock.StockController.extend({		
+owrang.stock.LandedCostWizard = owrang.stock.StockController.extend({		
 	setup: function() {
 		var me = this;
 		this.frm.fields_dict.lc_pr_details.grid.get_field('purchase_receipt').get_query = 
@@ -45,4 +45,4 @@ erpnext.stock.LandedCostWizard = erpnext.stock.StockController.extend({
 	}
 });
 
-cur_frm.script_manager.make(erpnext.stock.LandedCostWizard);
+cur_frm.script_manager.make(owrang.stock.LandedCostWizard);

@@ -134,9 +134,9 @@ def gdrive_callback(verification_code = None):
 	http = httplib2.Http()
 	http = credentials.authorize(http)
 	drive_service = build('drive', 'v2', http=http)
-	erpnext_folder_id = create_erpnext_folder(drive_service)
-	database_folder_id = create_folder('database', drive_service, erpnext_folder_id)
-	files_folder_id = create_folder('files', drive_service, erpnext_folder_id)
+	owrang_folder_id = create_owrang_folder(drive_service)
+	database_folder_id = create_folder('database', drive_service, owrang_folder_id)
+	files_folder_id = create_folder('files', drive_service, owrang_folder_id)
 
 	webnotes.conn.set_value("Backup Manager", "Backup Manager", "gdrive_access_allowed", allowed)
 	webnotes.conn.set_value("Backup Manager", "Backup Manager", "database_folder_id", database_folder_id)
@@ -146,15 +146,15 @@ def gdrive_callback(verification_code = None):
 
 	webnotes.msgprint("Updated")
 
-def create_erpnext_folder(service):
+def create_owrang_folder(service):
 	if not webnotes.conn:
 		webnotes.connect()
-	erpnext = {
-		'title': 'erpnext',
+	owrang = {
+		'title': 'owrang',
 		'mimeType': 'application/vnd.google-apps.folder'
 	}
-	erpnext = service.files().insert(body=erpnext).execute()
-	return erpnext['id']
+	owrang = service.files().insert(body=owrang).execute()
+	return owrang['id']
 
 def create_folder(name, service, folder_id):
 	database = {

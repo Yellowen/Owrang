@@ -1,9 +1,9 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-wn.provide("erpnext.support");
+wn.provide("owrang.support");
 // TODO commonify this code
-erpnext.support.MaintenanceVisit = wn.ui.form.Controller.extend({
+owrang.support.MaintenanceVisit = wn.ui.form.Controller.extend({
 	refresh: function() {
 		if (this.frm.doc.docstatus===0) {
 			cur_frm.add_custom_button(wn._('From Maintenance Schedule'), 
@@ -60,7 +60,7 @@ erpnext.support.MaintenanceVisit = wn.ui.form.Controller.extend({
 	}, 
 });
 
-$.extend(cur_frm.cscript, new erpnext.support.MaintenanceVisit({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.support.MaintenanceVisit({frm: cur_frm}));
 
 cur_frm.cscript.onload = function(doc, dt, dn) {
 	if(!doc.status) set_multiple(dt,dn,{status:'Draft'});

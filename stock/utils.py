@@ -371,7 +371,7 @@ def send_email_notification(mr_list):
 	sendmail(email_list, subject='Auto Material Request Generation Notification', msg = msg)
 	
 def notify_errors(exceptions_list):
-	subject = "[Important] [ERPNext] Error(s) while creating Material Requests based on Re-order Levels"
+	subject = "[Important] [Owrang] Error(s) while creating Material Requests based on Re-order Levels"
 	msg = """Dear System Manager,
 
 		An error occured for certain Items while creating Material Requests based on Re-order level.

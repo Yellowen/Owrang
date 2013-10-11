@@ -95,7 +95,7 @@ def send_email():
 	cancelled = "and cancelled the following Stock Entries:\n" + "\n".join(cancelled) \
 		if cancelled else ""
 
-	subject = "[ERPNext] [Important] Cancellation undone for some Stock Entries"
+	subject = "[Owrang] [Important] Cancellation undone for some Stock Entries"
 	content = """Dear System Manager, 
 
 An error got introduced into the code that cleared the item table in a Stock Entry associated to a Production Order.
@@ -110,7 +110,7 @@ You will have to edit them again.
 Sorry for the inconvenience this has caused.
 
 Regards,
-Team ERPNext.""" % (uncancelled, cancelled)
+Team Owrang.""" % (uncancelled, cancelled)
 
 	# print subject, content
 

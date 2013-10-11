@@ -972,7 +972,7 @@ Enter designation of this Contact,أدخل تسمية هذا الاتصال
 "Enter email id separated by commas, invoice will be mailed automatically on particular date",أدخل البريد الإلكتروني معرف مفصولة بفواصل، سوف ترسل الفاتورة تلقائيا على تاريخ معين
 Enter items and planned qty for which you want to raise production orders or download raw materials for analysis.,إدخال عناصر والكمية المخططة التي تريد رفع أوامر الإنتاج أو تحميل المواد الخام لتحليلها.
 Enter name of campaign if source of enquiry is campaign,أدخل اسم الحملة إذا كان مصدر من التحقيق هو حملة
-"Enter static url parameters here (Eg. sender=ERPNext, username=ERPNext, password=1234 etc.)",أدخل المعلمات URL ثابت هنا (مثلا المرسل = ERPNext، اسم المستخدم = ERPNext، كلمة المرور = 1234 الخ)
+"Enter static url parameters here (Eg. sender=Owrang, username=Owrang, password=1234 etc.)",أدخل المعلمات URL ثابت هنا (مثلا المرسل = Owrang، اسم المستخدم = Owrang، كلمة المرور = 1234 الخ)
 Enter the company name under which Account Head will be created for this Supplier,أدخل اسم الشركة التي بموجبها سيتم إنشاء حساب رئيس هذه الشركة
 Enter the date by which payments from customer is expected against this invoice.,أدخل التاريخ الذي من المتوقع المدفوعات من العملاء ضد هذه الفاتورة.
 Enter url parameter for message,أدخل عنوان URL لمعلمة رسالة
@@ -2628,7 +2628,7 @@ Set Value,تعيين القيمة
 Set prefix for numbering series on your transactions,تعيين بادئة لترقيم السلسلة على المعاملات الخاصة بك
 Set targets Item Group-wise for this Sales Person.,تحديد أهداف المجموعة السلعة الحكيم لهذا الشخص المبيعات.
 "Set your background color, font and image (tiled)",قم بضبط لون الخلفية والخط والصورة (البلاط)
-"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use ERPNext servers (emails will still be sent from your email id) or contact your email provider.",قم بضبط إعدادات البريد الصادر SMTP هنا. كل نظام ولدت الإخطارات، وسوف تذهب رسائل البريد الإلكتروني من خادم البريد هذا. إذا لم تكن متأكدا، اترك هذا المربع فارغا لاستخدام خوادم ERPNext (سوف يتم إرسال رسائل البريد الإلكتروني لا يزال من معرف البريد الإلكتروني الخاص بك) أو اتصل بمزود البريد الإلكتروني.
+"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use Owrang servers (emails will still be sent from your email id) or contact your email provider.",قم بضبط إعدادات البريد الصادر SMTP هنا. كل نظام ولدت الإخطارات، وسوف تذهب رسائل البريد الإلكتروني من خادم البريد هذا. إذا لم تكن متأكدا، اترك هذا المربع فارغا لاستخدام خوادم Owrang (سوف يتم إرسال رسائل البريد الإلكتروني لا يزال من معرف البريد الإلكتروني الخاص بك) أو اتصل بمزود البريد الإلكتروني.
 Setting Account Type helps in selecting this Account in transactions.,تحديد نوع الحساب يساعد في تحديد هذا الحساب في المعاملات.
 Settings,إعدادات
 Settings for About Us Page.,من نحن إعدادات الصفحة.
@@ -2764,7 +2764,7 @@ Style,أسلوب
 Style Settings,نمط الضبط
 "Style represents the button color: Success - Green, Danger - Red, Inverse - Black, Primary - Dark Blue, Info - Light Blue, Warning - Orange",النمط يمثل لون الزر: النجاح - الخضراء، خطر -، معكوس الأحمر - الأسود، الابتدائية - أزرق داكن، معلومات - أزرق فاتح، تحذير - أورانج
 "Sub-currency. For e.g. ""Cent""",شبه العملات. ل &quot;سنت&quot; على سبيل المثال
-Sub-domain provided by erpnext.com,النطاق الفرعي المقدمة من erpnext.com
+Sub-domain provided by owrang.yellowen.com,النطاق الفرعي المقدمة من owrang.yellowen.com
 Subcontract,قام بمقاولة فرعية
 Subdomain,نطاق فرعي
 Subject,موضوع
@@ -3318,7 +3318,7 @@ english,الإنجليزية
 envelope,مغلف
 español,الأسبانية
 example: Next Day Shipping,مثال: اليوم التالي شحن
-example: http://help.erpnext.com,مثال: http://help.erpnext.com
+example: http://help.owrang.yellowen.com,مثال: http://help.owrang.yellowen.com
 exclamation-sign,تعجب علامة-
 eye-close,إغلاق العين
 eye-open,فتح العين

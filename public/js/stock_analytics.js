@@ -3,7 +3,7 @@
 
 wn.require("app/js/stock_grid_report.js");
 
-erpnext.StockAnalytics = erpnext.StockGridReport.extend({
+owrang.StockAnalytics = owrang.StockGridReport.extend({
 	init: function(wrapper, opts) {
 		var args = {
 			title: "Stock Analytics",

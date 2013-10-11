@@ -4,9 +4,9 @@
 cur_frm.fields_dict.customer.get_query = function(doc,cdt,cdn) {
 	return{	query:"controllers.queries.customer_query" } }
 
-wn.provide("erpnext.support");
+wn.provide("owrang.support");
 // TODO commonify this code
-erpnext.support.CustomerIssue = wn.ui.form.Controller.extend({
+owrang.support.CustomerIssue = wn.ui.form.Controller.extend({
 	customer: function() {
 		var me = this;
 		if(this.frm.doc.customer) {
@@ -18,7 +18,7 @@ erpnext.support.CustomerIssue = wn.ui.form.Controller.extend({
 	}
 });
 
-$.extend(cur_frm.cscript, new erpnext.support.CustomerIssue({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.support.CustomerIssue({frm: cur_frm}));
 
 $.extend(cur_frm.cscript, {
 	onload: function(doc, dt, dn) {
@@ -29,7 +29,7 @@ $.extend(cur_frm.cscript, {
 	},
 	
 	refresh: function(doc) {
-		erpnext.hide_naming_series();
+		owrang.hide_naming_series();
 		cur_frm.cscript.make_listing(doc);
 		if(!doc.__islocal) {
 			if(cur_frm.fields_dict.status.get_status()=="Write") {

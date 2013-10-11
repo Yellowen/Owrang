@@ -3,7 +3,7 @@
 
 $.extend(cur_frm.cscript, {
 	onload: function() {
-		cur_frm.set_query("item_code", erpnext.queries.item);
+		cur_frm.set_query("item_code", owrang.queries.item);
 	},
 	
 	item_code: function() {

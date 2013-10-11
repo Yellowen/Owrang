@@ -1,9 +1,9 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-wn.provide("erpnext.accounts");
+wn.provide("owrang.accounts");
 
-erpnext.accounts.JournalVoucher = wn.ui.form.Controller.extend({
+owrang.accounts.JournalVoucher = wn.ui.form.Controller.extend({
 	onload: function() {
 		this.load_defaults();
 		this.setup_queries();
@@ -61,11 +61,11 @@ erpnext.accounts.JournalVoucher = wn.ui.form.Controller.extend({
 	},
 });
 
-cur_frm.script_manager.make(erpnext.accounts.JournalVoucher);
+cur_frm.script_manager.make(owrang.accounts.JournalVoucher);
 
 cur_frm.cscript.refresh = function(doc) {
 	cur_frm.cscript.is_opening(doc)
-	erpnext.hide_naming_series();
+	owrang.hide_naming_series();
 	cur_frm.cscript.voucher_type(doc);
 	if(doc.docstatus==1) { 
 		cur_frm.add_custom_button('View Ledger', function() {

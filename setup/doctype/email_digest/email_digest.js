@@ -4,7 +4,7 @@
 cur_frm.cscript.refresh = function(doc, dt, dn) {
 	doc = locals[dt][dn];
 	var save_msg = "You must <b>Save</b> the form before proceeding";
-	var err_msg = "There was an error. One probable reason could be that you haven't saved the form. Please contact support@erpnext.com if the problem persists."
+	var err_msg = "There was an error. One probable reason could be that you haven't saved the form. Please contact support@owrang.yellowen.com if the problem persists."
 	
 	cur_frm.add_custom_button('View Now', function() {
 		doc = locals[dt][dn];

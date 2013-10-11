@@ -1,10 +1,10 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-wn.provide("erpnext");
+wn.provide("owrang");
 wn.require("app/js/controllers/stock_controller.js");
 
-erpnext.TransactionController = erpnext.stock.StockController.extend({
+owrang.TransactionController = owrang.stock.StockController.extend({
 	onload: function() {
 		var me = this;
 		if(this.frm.doc.__islocal) {
@@ -58,8 +58,8 @@ erpnext.TransactionController = erpnext.stock.StockController.extend({
 	
 	refresh: function() {
 		this.frm.clear_custom_buttons();
-		erpnext.hide_naming_series();
-		erpnext.hide_company();
+		owrang.hide_naming_series();
+		owrang.hide_company();
 		this.show_item_wise_taxes();
 		this.set_dynamic_labels();
 
@@ -100,7 +100,7 @@ erpnext.TransactionController = erpnext.stock.StockController.extend({
 			// make pos
 			if(!this.frm.pos) {
 				this.frm.layout.add_view("pos");
-				this.frm.pos = new erpnext.POS(this.frm.layout.views.pos, this.frm);
+				this.frm.pos = new owrang.POS(this.frm.layout.views.pos, this.frm);
 			}
 
 			// toggle view
@@ -140,7 +140,7 @@ erpnext.TransactionController = erpnext.stock.StockController.extend({
 	},
 	
 	get_company_currency: function() {
-		return erpnext.get_currency(this.frm.doc.company);
+		return owrang.get_currency(this.frm.doc.company);
 	},
 	
 	currency: function() {

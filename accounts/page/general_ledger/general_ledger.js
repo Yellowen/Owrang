@@ -8,12 +8,12 @@ wn.pages['general-ledger'].onload = function(wrapper) {
 		single_column: true
 	});
 	
-	erpnext.general_ledger = new erpnext.GeneralLedger(wrapper);
+	owrang.general_ledger = new owrang.GeneralLedger(wrapper);
 	wrapper.appframe.add_module_icon("Accounts")
 
 }
 
-erpnext.GeneralLedger = wn.views.GridReport.extend({
+owrang.GeneralLedger = wn.views.GridReport.extend({
 	init: function(wrapper) {
 		this._super({
 			title: "General Ledger",

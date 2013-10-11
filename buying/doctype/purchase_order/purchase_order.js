@@ -1,7 +1,7 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-wn.provide("erpnext.buying");
+wn.provide("owrang.buying");
 
 cur_frm.cscript.tname = "Purchase Order Item";
 cur_frm.cscript.fname = "po_details";
@@ -12,7 +12,7 @@ wn.require('app/utilities/doctype/sms_control/sms_control.js');
 wn.require('app/buying/doctype/purchase_common/purchase_common.js');
 wn.require('app/accounts/doctype/sales_invoice/pos.js');
 
-erpnext.buying.PurchaseOrderController = erpnext.buying.BuyingController.extend({
+owrang.buying.PurchaseOrderController = owrang.buying.BuyingController.extend({
 	refresh: function(doc, cdt, cdn) {
 		this._super();
 		this.frm.dashboard.reset();
@@ -105,7 +105,7 @@ erpnext.buying.PurchaseOrderController = erpnext.buying.BuyingController.extend(
 });
 
 // for backward compatibility: combine new and previous states
-$.extend(cur_frm.cscript, new erpnext.buying.PurchaseOrderController({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.buying.PurchaseOrderController({frm: cur_frm}));
 
 cur_frm.fields_dict['supplier_address'].get_query = function(doc, cdt, cdn) {
 	return {

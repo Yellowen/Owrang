@@ -7,14 +7,14 @@ wn.pages['sales-analytics'].onload = function(wrapper) {
 		title: 'Sales Analytics',
 		single_column: true
 	});
-	new erpnext.SalesAnalytics(wrapper);
+	new owrang.SalesAnalytics(wrapper);
 	
 	wrapper.appframe.add_home_breadcrumb()
 	wrapper.appframe.add_module_icon("Selling")
 	wrapper.appframe.add_breadcrumb("icon-bar-chart")
 }
 
-erpnext.SalesAnalytics = wn.views.TreeGridReport.extend({
+owrang.SalesAnalytics = wn.views.TreeGridReport.extend({
 	init: function(wrapper) {
 		this._super({
 			title: "Sales Analytics",

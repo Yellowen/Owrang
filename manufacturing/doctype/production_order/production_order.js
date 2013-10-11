@@ -8,7 +8,7 @@ cur_frm.cscript.onload = function(doc, dt, dn) {
 
 cur_frm.cscript.refresh = function(doc, dt, dn) {
 	cur_frm.dashboard.reset();
-	erpnext.hide_naming_series();
+	owrang.hide_naming_series();
 	cur_frm.set_intro("");
 	cfn_set_fields(doc, dt, dn);
 

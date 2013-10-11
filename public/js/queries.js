@@ -2,8 +2,8 @@
 // License: GNU General Public License v3. See license.txt
 
 // searches for enabled profiles
-wn.provide("erpnext.queries");
-$.extend(erpnext.queries, {
+wn.provide("owrang.queries");
+$.extend(owrang.queries, {
 	profile: function() {
 		return { query: "core.doctype.profile.profile.profile_query" };
 	},

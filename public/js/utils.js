@@ -1,8 +1,8 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
-wn.provide("erpnext");
+wn.provide("owrang");
 
-$.extend(erpnext, {
+$.extend(owrang, {
 	get_currency: function(company) {
 		if(!company && cur_frm)
 			company = cur_frm.doc.company;

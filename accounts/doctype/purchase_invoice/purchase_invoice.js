@@ -5,12 +5,12 @@ cur_frm.cscript.tname = "Purchase Invoice Item";
 cur_frm.cscript.fname = "entries";
 cur_frm.cscript.other_fname = "purchase_tax_details";
 
-wn.provide("erpnext.accounts");
+wn.provide("owrang.accounts");
 wn.require('app/accounts/doctype/purchase_taxes_and_charges_master/purchase_taxes_and_charges_master.js');
 wn.require('app/buying/doctype/purchase_common/purchase_common.js');
 wn.require('app/accounts/doctype/sales_invoice/pos.js');
 
-erpnext.accounts.PurchaseInvoice = erpnext.buying.BuyingController.extend({
+owrang.accounts.PurchaseInvoice = owrang.buying.BuyingController.extend({
 	onload: function() {
 		this._super();
 		
@@ -98,7 +98,7 @@ erpnext.accounts.PurchaseInvoice = erpnext.buying.BuyingController.extend({
 	}
 });
 
-cur_frm.script_manager.make(erpnext.accounts.PurchaseInvoice);
+cur_frm.script_manager.make(owrang.accounts.PurchaseInvoice);
 
 cur_frm.cscript.is_opening = function(doc, dt, dn) {
 	hide_field('aging_date');

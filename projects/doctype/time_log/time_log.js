@@ -1,14 +1,14 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-wn.provide("erpnext.projects");
+wn.provide("owrang.projects");
 
-erpnext.projects.TimeLog = wn.ui.form.Controller.extend({
+owrang.projects.TimeLog = wn.ui.form.Controller.extend({
 	onload: function() {
-		this.frm.set_query("task", erpnext.queries.task);
+		this.frm.set_query("task", owrang.queries.task);
 	}
 });
 
-cur_frm.cscript = new erpnext.projects.TimeLog({frm: cur_frm});
+cur_frm.cscript = new owrang.projects.TimeLog({frm: cur_frm});
 
 cur_frm.add_fetch('task','project','project');

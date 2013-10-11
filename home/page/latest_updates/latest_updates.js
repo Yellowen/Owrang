@@ -17,7 +17,7 @@ wn.pages['latest-updates'].onload = function(wrapper) {
 		callback: function(r) {
 			parent.empty();
 			$("<p class='help'>Report issues at\
-				<a href='https://github.com/webnotes/erpnext/issues'>GitHub Issues</a></p>\
+				<a href='https://github.com/webnotes/owrang/issues'>GitHub Issues</a></p>\
 				<hr><h3>Commit Log</h3>")
 					.appendTo(parent);
 				
@@ -37,7 +37,7 @@ wn.pages['latest-updates'].onload = function(wrapper) {
 							});
 							return  '<span class="label ' + color_class +'">' + p1.slice(1,-1) + '</span> ' 
 						});
-					log.repo = log.repo==="lib" ? "wnframework" : "erpnext";
+					log.repo = log.repo==="lib" ? "wnframework" : "owrang";
 					$(repl('<tr>\
 						<td><b><a href="https://github.com/webnotes/%(repo)s/commit/%(commit)s" \
 							target="_blank">%(message)s</b>\

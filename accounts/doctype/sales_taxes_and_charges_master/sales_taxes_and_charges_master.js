@@ -4,7 +4,7 @@
 //--------- ONLOAD -------------
 cur_frm.cscript.onload = function(doc, cdt, cdn) {
 	if(doc.doctype === "Sales Taxes and Charges Master")
-		erpnext.add_for_territory();
+		owrang.add_for_territory();
 }
 
 cur_frm.cscript.refresh = function(doc, cdt, cdn) {

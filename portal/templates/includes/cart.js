@@ -4,7 +4,7 @@
 // js inside blog page
 
 $(document).ready(function() {
-	erpnext.cart.bind_events();
+	owrang.cart.bind_events();
 	return wn.call({
 		type: "POST",
 		method: "selling.utils.cart.get_cart_quotation",
@@ -13,23 +13,23 @@ $(document).ready(function() {
 			$(".progress").remove();
 			if(r.exc) {
 				if(r.exc.indexOf("WebsitePriceListMissingError")!==-1) {
-					erpnext.cart.show_error("Oops!", "Price List not configured.");
+					owrang.cart.show_error("Oops!", "Price List not configured.");
 				} else if(r["403"]) {
-					erpnext.cart.show_error("Hey!", "You need to be logged in to view your cart.");
+					owrang.cart.show_error("Hey!", "You need to be logged in to view your cart.");
 				} else {
-					erpnext.cart.show_error("Oops!", "Something went wrong.");
+					owrang.cart.show_error("Oops!", "Something went wrong.");
 				}
 			} else {
-				erpnext.cart.set_cart_count();
-				erpnext.cart.render(r.message);
+				owrang.cart.set_cart_count();
+				owrang.cart.render(r.message);
 			}
 		}
 	});
 });
 
 // shopping cart
-if(!erpnext.cart) erpnext.cart = {};
-$.extend(erpnext.cart, {
+if(!owrang.cart) owrang.cart = {};
+$.extend(owrang.cart, {
 	show_error: function(title, text) {
 		$("#cart-container").html('<div class="well"><h4>' + title + '</h4> ' + text + '</div>');
 	},
@@ -38,14 +38,14 @@ $.extend(erpnext.cart, {
 		// bind update button
 		$(document).on("click", ".item-update-cart button", function() {
 			var item_code = $(this).attr("data-item-code");
-			erpnext.cart.update_cart({
+			owrang.cart.update_cart({
 				item_code: item_code,
 				qty: $('input[data-item-code="'+item_code+'"]').val(),
 				with_doclist: 1,
 				btn: this,
 				callback: function(r) {
 					if(!r.exc) {
-						erpnext.cart.render(r.message);
+						owrang.cart.render(r.message);
 						var $button = $('button[data-item-code="'+item_code+'"]').addClass("btn-success");
 						setTimeout(function() { $button.removeClass("btn-success"); }, 1000);
 					}
@@ -62,7 +62,7 @@ $.extend(erpnext.cart, {
 		});
 		
 		$(".btn-place-order").on("click", function() {
-			erpnext.cart.place_order(this);
+			owrang.cart.place_order(this);
 		});
 	},
 	
@@ -78,7 +78,7 @@ $.extend(erpnext.cart, {
 		
 		var no_items = $.map(doclist, function(d) { return d.item_code || null;}).length===0;
 		if(no_items) {
-			erpnext.cart.show_error("Empty :-(", "Go ahead and add something to your cart.");
+			owrang.cart.show_error("Empty :-(", "Go ahead and add something to your cart.");
 			$("#cart-addresses").toggle(false);
 			return;
 		}
@@ -88,14 +88,14 @@ $.extend(erpnext.cart, {
 		var shipping_rule_labels = $.map(out.shipping_rules || [], function(rule) { return rule[1]; });
 		$.each(doclist, function(i, doc) {
 			if(doc.doctype === "Quotation Item") {
-				erpnext.cart.render_item_row($cart_items, doc);
+				owrang.cart.render_item_row($cart_items, doc);
 			} else if (doc.doctype === "Sales Taxes and Charges") {
 				if(out.shipping_rules && out.shipping_rules.length && 
 					shipping_rule_labels.indexOf(doc.description)!==-1) {
 						shipping_rule_added = true;
-						erpnext.cart.render_tax_row($cart_taxes, doc, out.shipping_rules);
+						owrang.cart.render_tax_row($cart_taxes, doc, out.shipping_rules);
 				} else {
-					erpnext.cart.render_tax_row($cart_taxes, doc);
+					owrang.cart.render_tax_row($cart_taxes, doc);
 				}
 				
 				taxes_exist = true;
@@ -103,7 +103,7 @@ $.extend(erpnext.cart, {
 		});
 		
 		if(out.shipping_rules && out.shipping_rules.length && !shipping_rule_added) {
-			erpnext.cart.render_tax_row($cart_taxes, {description: "", formatted_tax_amount: ""},
+			owrang.cart.render_tax_row($cart_taxes, {description: "", formatted_tax_amount: ""},
 				out.shipping_rules);
 			taxes_exist = true;
 		}
@@ -111,7 +111,7 @@ $.extend(erpnext.cart, {
 		if(taxes_exist)
 			$('<hr>').appendTo($cart_taxes);
 			
-		erpnext.cart.render_tax_row($cart_totals, {
+		owrang.cart.render_tax_row($cart_totals, {
 			description: "<strong>Total</strong>", 
 			formatted_tax_amount: "<strong>" + doclist[0].formatted_grand_total_export + "</strong>"
 		});
@@ -119,8 +119,8 @@ $.extend(erpnext.cart, {
 		if(!(addresses && addresses.length)) {
 			$cart_shipping_address.html('<div class="well">Hey! Go ahead and add an address</div>');
 		} else {
-			erpnext.cart.render_address($cart_shipping_address, addresses, doclist[0].shipping_address_name);
-			erpnext.cart.render_address($cart_billing_address, addresses, doclist[0].customer_address);
+			owrang.cart.render_address($cart_shipping_address, addresses, doclist[0].shipping_address_name);
+			owrang.cart.render_address($cart_billing_address, addresses, doclist[0].customer_address);
 		}
 	},
 	
@@ -184,7 +184,7 @@ $.extend(erpnext.cart, {
 				}
 			});
 			$tax_row.find('select').on("change", function() {
-				erpnext.cart.apply_shipping_rule($(this).val(), this);
+				owrang.cart.apply_shipping_rule($(this).val(), this);
 			});
 		}
 	},
@@ -197,7 +197,7 @@ $.extend(erpnext.cart, {
 			args: { shipping_rule: rule },
 			callback: function(r) {
 				if(!r.exc) {
-					erpnext.cart.render(r.message);
+					owrang.cart.render(r.message);
 				}
 			}
 		});
@@ -248,7 +248,7 @@ $.extend(erpnext.cart, {
 					},
 					callback: function(r) {
 						if(!r.exc) {
-							erpnext.cart.render(r.message);
+							owrang.cart.render(r.message);
 						}
 					}
 				});

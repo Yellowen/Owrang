@@ -11,7 +11,7 @@ wn.require('app/accounts/doctype/purchase_taxes_and_charges_master/purchase_taxe
 wn.require('app/buying/doctype/purchase_common/purchase_common.js');
 wn.require('app/accounts/doctype/sales_invoice/pos.js');
 
-erpnext.buying.SupplierQuotationController = erpnext.buying.BuyingController.extend({
+owrang.buying.SupplierQuotationController = owrang.buying.BuyingController.extend({
 	refresh: function() {
 		this._super();
 
@@ -45,7 +45,7 @@ erpnext.buying.SupplierQuotationController = erpnext.buying.BuyingController.ext
 });
 
 // for backward compatibility: combine new and previous states
-$.extend(cur_frm.cscript, new erpnext.buying.SupplierQuotationController({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.buying.SupplierQuotationController({frm: cur_frm}));
 
 cur_frm.cscript.uom = function(doc, cdt, cdn) {
 	// no need to trigger updation of stock uom, as this field doesn't exist in supplier quotation

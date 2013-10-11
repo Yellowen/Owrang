@@ -17,7 +17,7 @@ def install(install_path=None):
 
     if not install_path:
         install_path = os.getcwd()
-    install_erpnext(install_path)
+    install_owrang(install_path)
 
     post_install(install_path)
 
@@ -50,7 +50,7 @@ def validate_install():
     python_version = sys.version.split(" ")[0]
     print "Python Version =", python_version
     if not (python_version and int(python_version.split(".")[0])==2 and int(python_version.split(".")[1]) >= 6):
-        raise Exception, "Hey! ERPNext needs Python version to be 2.6+"
+        raise Exception, "Hey! Owrang needs Python version to be 2.6+"
 
     # check distribution
     distribution = platform.linux_distribution()[0].lower().replace('"', '')
@@ -81,7 +81,7 @@ def install_using_yum():
         # set a root password post install
         global root_password
         print "Please create a password for root user of MySQL"
-        root_password = (get_root_password() or "erpnext").strip()
+        root_password = (get_root_password() or "owrang").strip()
         exec_in_shell('mysqladmin -u root password "%s"' % (root_password,))
         print "Root password set as", root_password
 
@@ -162,10 +162,10 @@ def install_python_modules():
     exec_in_shell("pip install -q %s" % python_modules)
 
 
-def install_erpnext(install_path):
+def install_owrang(install_path):
     print
     print "-" * 80
-    print "Installing ERPNext"
+    print "Installing Owrang"
     print "-" * 80
 
     # ask for details
@@ -174,9 +174,9 @@ def install_erpnext(install_path):
         root_password = get_root_password()
         test_root_connection(root_password)
 
-    db_name = raw_input("ERPNext Database Name: ")
+    db_name = raw_input("Owrang Database Name: ")
     if not db_name:
-        raise Exception, "Sorry! You must specify ERPNext Database Name"
+        raise Exception, "Sorry! You must specify Owrang Database Name"
 
     # install folders and conf
     setup_folders(install_path)
@@ -215,7 +215,7 @@ def setup_folders(install_path):
         exec_in_shell("cd %s && git clone https://github.com/Yellowen/Owrang.git app" % install_path)
         exec_in_shell("cd app && git config core.filemode false")
         if not os.path.exists(app):
-            raise Exception, "Couldn't clone erpnext repository"
+            raise Exception, "Couldn't clone owrang repository"
 
     lib = os.path.join(install_path, "lib")
     if not os.path.exists(lib):
@@ -262,12 +262,12 @@ def setup_db(install_path, root_password, db_name):
 
 
 def setup_cron(install_path):
-    erpnext_cron_entries = [
-        "*/3 * * * * cd %s && python lib/wnf.py --run_scheduler >> /var/log/erpnext-sch.log 2>&1" % install_path,
-        "0 */6 * * * cd %s && python lib/wnf.py --backup >> /var/log/erpnext-backup.log 2>&1" % install_path
+    owrang_cron_entries = [
+        "*/3 * * * * cd %s && python lib/wnf.py --run_scheduler >> /var/log/owrang-sch.log 2>&1" % install_path,
+        "0 */6 * * * cd %s && python lib/wnf.py --backup >> /var/log/owrang-backup.log 2>&1" % install_path
         ]
 
-    for row in erpnext_cron_entries:
+    for row in owrang_cron_entries:
         try:
             existing_cron = exec_in_shell("crontab -l")
             if row not in existing_cron:

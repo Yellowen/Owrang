@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.	If not, see <http://www.gnu.org/licenses/>.
 
-erpnext.AccountTreeGrid = wn.views.TreeGridReport.extend({
+owrang.AccountTreeGrid = wn.views.TreeGridReport.extend({
 	init: function(wrapper, title) {
 		this._super({
 			title: title,

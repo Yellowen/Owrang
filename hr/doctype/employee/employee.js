@@ -1,8 +1,8 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-wn.provide("erpnext.hr");
-erpnext.hr.EmployeeController = wn.ui.form.Controller.extend({
+wn.provide("owrang.hr");
+owrang.hr.EmployeeController = wn.ui.form.Controller.extend({
 	setup: function() {
 		this.setup_leave_approver_select();
 		this.frm.fields_dict.user_id.get_query = function(doc,cdt,cdn) {
@@ -19,7 +19,7 @@ erpnext.hr.EmployeeController = wn.ui.form.Controller.extend({
 	
 	refresh: function() {
 		var me = this;
-		erpnext.hide_naming_series();
+		owrang.hide_naming_series();
 		if(!this.frm.doc.__islocal) {			
 			cur_frm.add_custom_button('Make Salary Structure', function() {
 				me.make_salary_structure(this); });
@@ -93,4 +93,4 @@ erpnext.hr.EmployeeController = wn.ui.form.Controller.extend({
 		});
 	},
 });
-cur_frm.cscript = new erpnext.hr.EmployeeController({frm: cur_frm});
+cur_frm.cscript = new owrang.hr.EmployeeController({frm: cur_frm});

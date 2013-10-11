@@ -1,9 +1,9 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-wn.provide("erpnext.stock");
+wn.provide("owrang.stock");
 
-erpnext.stock.StockController = wn.ui.form.Controller.extend({
+owrang.stock.StockController = wn.ui.form.Controller.extend({
 	show_stock_ledger: function() {
 		var me = this;
 		if(this.frm.doc.docstatus===1) {

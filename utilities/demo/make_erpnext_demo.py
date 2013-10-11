@@ -33,15 +33,15 @@ def make_demo_user():
 			})
 	
 	# make demo user
-	if webnotes.conn.exists("Profile", "demo@erpnext.com"):
-		webnotes.delete_doc("Profile", "demo@erpnext.com")
+	if webnotes.conn.exists("Profile", "demo@owrang.yellowen.com"):
+		webnotes.delete_doc("Profile", "demo@owrang.yellowen.com")
 
 	p = webnotes.new_bean("Profile")
-	p.doc.email = "demo@erpnext.com"
+	p.doc.email = "demo@owrang.yellowen.com"
 	p.doc.first_name = "Demo"
 	p.doc.last_name = "User"
 	p.doc.enabled = 1
-	p.doc.user_type = "ERPNext Demo"
+	p.doc.user_type = "Owrang Demo"
 	p.doc.send_invite_email = 0
 	p.doc.new_password = "demo"
 	p.insert()
@@ -49,11 +49,11 @@ def make_demo_user():
 	p.save()
 	
 	# make system manager user
-	if webnotes.conn.exists("Profile", "admin@erpnext.com"):
-		webnotes.delete_doc("Profile", "admin@erpnext.com")
+	if webnotes.conn.exists("Profile", "admin@owrang.yellowen.com"):
+		webnotes.delete_doc("Profile", "admin@owrang.yellowen.com")
 	
 	p = webnotes.new_bean("Profile")
-	p.doc.email = "admin@erpnext.com"
+	p.doc.email = "admin@owrang.yellowen.com"
 	p.doc.first_name = "Admin"
 	p.doc.last_name = "User"
 	p.doc.enabled = 1
@@ -80,7 +80,7 @@ def make_demo_login_page():
 	p = webnotes.new_bean("Web Page")
 	p.doc.title = "Demo Login"
 	p.doc.published = 1
-	p.doc.description = "ERPNext Demo Login"
+	p.doc.description = "Owrang Demo Login"
 
 	with open(os.path.join(os.path.dirname(__file__), "demo-login.html"), "r") as dfile:
 		p.doc.main_section = dfile.read()
@@ -112,7 +112,7 @@ def make_demo_on_login_script():
 	s.insert()
 	
 	cp = webnotes.bean("Control Panel")
-	cp.doc.custom_startup_code = """wn.ui.toolbar.show_banner('You are using ERPNext Demo. To start your own ERPNext Trial, <a href="https://erpnext.com/pricing-and-signup" target="_blank">click here</a>')"""
+	cp.doc.custom_startup_code = """wn.ui.toolbar.show_banner('You are using Owrang Demo. To start your own Owrang Trial, <a href="https://owrang.yellowen.com/pricing-and-signup" target="_blank">click here</a>')"""
 	cp.save()
 
 	webnotes.conn.commit()

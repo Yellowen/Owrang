@@ -4,8 +4,8 @@
 wn.require('app/utilities/doctype/sms_control/sms_control.js');
 wn.require('app/setup/doctype/contact_control/contact_control.js');
 
-wn.provide("erpnext");
-erpnext.LeadController = wn.ui.form.Controller.extend({
+wn.provide("owrang");
+owrang.LeadController = wn.ui.form.Controller.extend({
 	setup: function() {
 		this.frm.fields_dict.customer.get_query = function(doc,cdt,cdn) {
 				return { query:"controllers.queries.customer_query" } }
@@ -31,7 +31,7 @@ erpnext.LeadController = wn.ui.form.Controller.extend({
 	
 	refresh: function() {
 		var doc = this.frm.doc;
-		erpnext.hide_naming_series();
+		owrang.hide_naming_series();
 		this.frm.clear_custom_buttons();
 				
 		this.frm.__is_customer = this.frm.__is_customer || this.frm.doc.__is_customer;
@@ -91,4 +91,4 @@ erpnext.LeadController = wn.ui.form.Controller.extend({
 	}
 });
 
-$.extend(cur_frm.cscript, new erpnext.LeadController({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.LeadController({frm: cur_frm}));

@@ -14,7 +14,7 @@ from __future__ import unicode_literals
 import sys
 sys.path.append("lib/py")
 sys.path.append(".")
-sys.path.append("erpnext")
+sys.path.append("owrang")
 
 import webnotes
 

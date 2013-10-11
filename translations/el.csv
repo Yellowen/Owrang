@@ -985,7 +985,7 @@ Enter designation of this Contact,Εισάγετε ονομασία αυτή τ�
 "Enter email id separated by commas, invoice will be mailed automatically on particular date","Πληκτρολογήστε το αναγνωριστικό ηλεκτρονικού ταχυδρομείου, διαχωρισμένες με κόμματα, το τιμολόγιο θα αποσταλεί αυτόματα την συγκεκριμένη ημερομηνία"
 Enter items and planned qty for which you want to raise production orders or download raw materials for analysis.,Εισάγετε τα στοιχεία και την προγραμματισμένη έκαστος για την οποία θέλετε να αυξήσει τις παραγγελίες της παραγωγής ή να κατεβάσετε τις πρώτες ύλες για την ανάλυση.
 Enter name of campaign if source of enquiry is campaign,Πληκτρολογήστε το όνομα της καμπάνιας εάν η πηγή της έρευνας είναι η εκστρατεία
-"Enter static url parameters here (Eg. sender=ERPNext, username=ERPNext, password=1234 etc.)","Εισάγετε στατικές παραμέτρους url εδώ (Π.χ. αποστολέα = ERPNext, όνομα = ERPNext, password = 1234 κλπ.)"
+"Enter static url parameters here (Eg. sender=Owrang, username=Owrang, password=1234 etc.)","Εισάγετε στατικές παραμέτρους url εδώ (Π.χ. αποστολέα = Owrang, όνομα = Owrang, password = 1234 κλπ.)"
 Enter the company name under which Account Head will be created for this Supplier,Εισάγετε το όνομα της εταιρείας βάσει της οποίας επικεφαλής λογαριασμός θα δημιουργηθεί αυτής της επιχείρησης
 Enter the date by which payments from customer is expected against this invoice.,Εισάγετε την ημερομηνία κατά την οποία οι πληρωμές από τους πελάτες αναμένεται κατά το παρόν τιμολόγιο.
 Enter url parameter for message,Εισάγετε παράμετρο url για το μήνυμα
@@ -2659,7 +2659,7 @@ Set Value,Ορισμός Value
 Set prefix for numbering series on your transactions,Ορίστε πρόθεμα για σειρά αρίθμησης για τις συναλλαγές σας
 Set targets Item Group-wise for this Sales Person.,Τον καθορισμό στόχων Θέση Ομάδα-σοφός για αυτό το πρόσωπο πωλήσεων.
 "Set your background color, font and image (tiled)","Ρυθμίστε το χρώμα του φόντου σας, τη γραμματοσειρά και την εικόνα (πλακάκια)"
-"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use ERPNext servers (emails will still be sent from your email id) or contact your email provider.","Ορισμός εξερχόμενων ρυθμίσεις SMTP σας διεύθυνση εδώ. Όλα τα συστήματα που δημιουργούνται ειδοποιήσεις, μηνύματα ηλεκτρονικού ταχυδρομείου θα πάει από αυτό το διακομιστή αλληλογραφίας. Εάν δεν είστε σίγουροι, αφήστε αυτό το κενό για να χρησιμοποιηθεί ERPNext servers (e-mail θα αποσταλούν από την ταυτότητα ηλεκτρονικού ταχυδρομείου σας) ή επικοινωνήστε με τον παροχέα email σας."
+"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use Owrang servers (emails will still be sent from your email id) or contact your email provider.","Ορισμός εξερχόμενων ρυθμίσεις SMTP σας διεύθυνση εδώ. Όλα τα συστήματα που δημιουργούνται ειδοποιήσεις, μηνύματα ηλεκτρονικού ταχυδρομείου θα πάει από αυτό το διακομιστή αλληλογραφίας. Εάν δεν είστε σίγουροι, αφήστε αυτό το κενό για να χρησιμοποιηθεί Owrang servers (e-mail θα αποσταλούν από την ταυτότητα ηλεκτρονικού ταχυδρομείου σας) ή επικοινωνήστε με τον παροχέα email σας."
 Setting Account Type helps in selecting this Account in transactions.,Ρύθμιση Τύπος λογαριασμού βοηθά στην επιλογή αυτόν το λογαριασμό στις συναλλαγές.
 Settings,Ρυθμίσεις
 Settings for About Us Page.,Ρυθμίσεις για την εταιρεία μας σελίδα.
@@ -2796,7 +2796,7 @@ Style,Στυλ
 Style Settings,Ρυθμίσεις Style
 "Style represents the button color: Success - Green, Danger - Red, Inverse - Black, Primary - Dark Blue, Info - Light Blue, Warning - Orange","Style αντιπροσωπεύει το χρώμα του κουμπιού: Επιτυχία - Green, Danger - Κόκκινο, Inverse - Μαύρο, Πρωτοβάθμια - Σκούρο Μπλε, Info - Γαλάζιο, Προσοχή - Orange"
 "Sub-currency. For e.g. ""Cent""",Υπο-νόμισμα. Για παράδειγμα &quot;Cent&quot;
-Sub-domain provided by erpnext.com,Sub-domain που παρέχεται από erpnext.com
+Sub-domain provided by owrang.yellowen.com,Sub-domain που παρέχεται από owrang.yellowen.com
 Subcontract,Υπεργολαβία
 Subdomain,Υποκατηγορία
 Subject,Θέμα
@@ -3354,7 +3354,7 @@ english,english
 envelope,φάκελος
 español,español
 example: Next Day Shipping,παράδειγμα: Επόμενη Μέρα Ναυτιλίας
-example: http://help.erpnext.com,παράδειγμα: http://help.erpnext.com
+example: http://help.owrang.yellowen.com,παράδειγμα: http://help.owrang.yellowen.com
 exclamation-sign,θαυμαστικό-sign
 eye-close,μάτι-κλείσιμο
 eye-open,μάτι-άνοιγμα

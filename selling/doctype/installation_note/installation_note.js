@@ -4,9 +4,9 @@
 cur_frm.cscript.tname = "Installation Note Item";
 cur_frm.cscript.fname = "installed_item_details";
 
-wn.provide("erpnext.selling");
+wn.provide("owrang.selling");
 // TODO commonify this code
-erpnext.selling.InstallationNote = wn.ui.form.Controller.extend({
+owrang.selling.InstallationNote = wn.ui.form.Controller.extend({
 	onload: function() {
 		if(!this.frm.doc.status) set_multiple(dt,dn,{ status:'Draft'});
 		if(this.frm.doc.__islocal) set_multiple(this.frm.doc.doctype, this.frm.doc.name, 
@@ -98,4 +98,4 @@ erpnext.selling.InstallationNote = wn.ui.form.Controller.extend({
 	},
 });
 
-$.extend(cur_frm.cscript, new erpnext.selling.InstallationNote({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.selling.InstallationNote({frm: cur_frm}));

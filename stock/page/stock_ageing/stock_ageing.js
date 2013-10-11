@@ -9,7 +9,7 @@ wn.pages['stock-ageing'].onload = function(wrapper) {
 		single_column: true
 	});
 
-	new erpnext.StockAgeing(wrapper);
+	new owrang.StockAgeing(wrapper);
 	
 	wrapper.appframe.add_home_breadcrumb()
 	wrapper.appframe.add_module_icon("Stock")
@@ -18,7 +18,7 @@ wn.pages['stock-ageing'].onload = function(wrapper) {
 
 wn.require("app/js/stock_grid_report.js");
 
-erpnext.StockAgeing = erpnext.StockGridReport.extend({
+owrang.StockAgeing = owrang.StockGridReport.extend({
 	init: function(wrapper) {
 		this._super({
 			title: "Stock Ageing",

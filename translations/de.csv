@@ -972,7 +972,7 @@ Enter designation of this Contact,Geben Bezeichnung dieser Kontakt
 "Enter email id separated by commas, invoice will be mailed automatically on particular date","Geben Sie E-Mail-ID durch Kommata getrennt, wird Rechnung automatisch auf bestimmte Zeitpunkt zugeschickt"
 Enter items and planned qty for which you want to raise production orders or download raw materials for analysis.,Geben Sie die Posten und geplante Menge für die Sie Fertigungsaufträge erhöhen oder downloaden Rohstoffe für die Analyse.
 Enter name of campaign if source of enquiry is campaign,"Geben Sie den Namen der Kampagne, wenn die Quelle der Anfrage ist Kampagne"
-"Enter static url parameters here (Eg. sender=ERPNext, username=ERPNext, password=1234 etc.)","Geben Sie statischen URL-Parameter hier (Bsp. sender = ERPNext, username = ERPNext, password = 1234 etc.)"
+"Enter static url parameters here (Eg. sender=Owrang, username=Owrang, password=1234 etc.)","Geben Sie statischen URL-Parameter hier (Bsp. sender = Owrang, username = Owrang, password = 1234 etc.)"
 Enter the company name under which Account Head will be created for this Supplier,"Geben Sie den Namen des Unternehmens, unter denen Konto Leiter für diesen Lieferant erstellt werden"
 Enter the date by which payments from customer is expected against this invoice.,Geben Sie das Datum der Zahlungen von Kunden gegen diese Rechnung erwartet wird.
 Enter url parameter for message,Geben Sie URL-Parameter für die Nachrichtenübertragung
@@ -2628,7 +2628,7 @@ Set Value,Wert festlegen
 Set prefix for numbering series on your transactions,Nummerierung einstellen Serie Präfix für Ihre Online-Transaktionen
 Set targets Item Group-wise for this Sales Person.,Set zielt Artikel gruppenweise für diesen Sales Person.
 "Set your background color, font and image (tiled)","Stellen Sie Ihre Hintergrundfarbe, Schrift und Bild (Kachel)"
-"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use ERPNext servers (emails will still be sent from your email id) or contact your email provider.","Stellen Sie Ihre ausgehende Mail SMTP-Einstellungen hier. Alle System generierten Meldungen werden E-Mails von diesen Mail-Server gehen. Wenn Sie sich nicht sicher sind, lassen Sie dieses Feld leer, um ERPNext Server (E-Mails werden immer noch von Ihrer E-Mail-ID gesendet werden) verwenden oder kontaktieren Sie Ihren E-Mail-Provider."
+"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use Owrang servers (emails will still be sent from your email id) or contact your email provider.","Stellen Sie Ihre ausgehende Mail SMTP-Einstellungen hier. Alle System generierten Meldungen werden E-Mails von diesen Mail-Server gehen. Wenn Sie sich nicht sicher sind, lassen Sie dieses Feld leer, um Owrang Server (E-Mails werden immer noch von Ihrer E-Mail-ID gesendet werden) verwenden oder kontaktieren Sie Ihren E-Mail-Provider."
 Setting Account Type helps in selecting this Account in transactions.,Einstellung Kontotyp hilft bei der Auswahl der Transaktionen in diesem Konto.
 Settings,Einstellungen
 Settings for About Us Page.,Einstellungen für Über uns Seite.
@@ -2764,7 +2764,7 @@ Style,Stil
 Style Settings,Style Einstellungen
 "Style represents the button color: Success - Green, Danger - Red, Inverse - Black, Primary - Dark Blue, Info - Light Blue, Warning - Orange","Stil repräsentiert die Farbe der Schaltfläche: Success - Grün, Gefahr - Rot, Inverse - Schwarz, Primary - Dunkelblau, Info - Light Blue, Warnung - Orange"
 "Sub-currency. For e.g. ""Cent""","Sub-Währung. Für z.B. ""Cent"""
-Sub-domain provided by erpnext.com,Sub-Domain durch erpnext.com vorgesehen
+Sub-domain provided by owrang.yellowen.com,Sub-Domain durch owrang.yellowen.com vorgesehen
 Subcontract,Vergeben
 Subdomain,Subdomain
 Subject,Thema
@@ -3318,7 +3318,7 @@ english,Englisch
 envelope,Umschlag
 español,español
 example: Next Day Shipping,Beispiel: Versand am nächsten Tag
-example: http://help.erpnext.com,Beispiel: http://help.erpnext.com
+example: http://help.owrang.yellowen.com,Beispiel: http://help.owrang.yellowen.com
 exclamation-sign,Ausrufezeichen-Zeichen
 eye-close,Auge-Schließ
 eye-open,Augen öffnen

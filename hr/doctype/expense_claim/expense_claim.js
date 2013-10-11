@@ -1,9 +1,9 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-wn.provide("erpnext.hr");
+wn.provide("owrang.hr");
 
-erpnext.hr.ExpenseClaimController = wn.ui.form.Controller.extend({
+owrang.hr.ExpenseClaimController = wn.ui.form.Controller.extend({
 	make_bank_voucher: function() {
 		var me = this;
 		return wn.call({
@@ -37,7 +37,7 @@ erpnext.hr.ExpenseClaimController = wn.ui.form.Controller.extend({
 	}
 })
 
-$.extend(cur_frm.cscript, new erpnext.hr.ExpenseClaimController({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.hr.ExpenseClaimController({frm: cur_frm}));
 
 cur_frm.add_fetch('employee', 'company', 'company');
 cur_frm.add_fetch('employee','employee_name','employee_name');

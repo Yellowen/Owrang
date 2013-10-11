@@ -8,10 +8,10 @@
 // cur_frm.cscript.other_fname - wn.require('app/accounts/doctype/sales_taxes_and_charges_master/sales_taxes_and_charges_master.js'); fieldname
 // cur_frm.cscript.sales_team_fname - Sales Team fieldname
 
-wn.provide("erpnext.selling");
+wn.provide("owrang.selling");
 wn.require("app/js/transaction.js");
 
-erpnext.selling.SellingController = erpnext.TransactionController.extend({
+owrang.selling.SellingController = owrang.TransactionController.extend({
 	onload: function() {
 		this._super();
 		this.toggle_rounded_total();
@@ -31,7 +31,7 @@ erpnext.selling.SellingController = erpnext.TransactionController.extend({
 			["lead", "lead"]], 
 			function(i, opts) {
 				if(me.frm.fields_dict[opts[0]]) 
-					me.frm.set_query(opts[0], erpnext.queries[opts[1]]);
+					me.frm.set_query(opts[0], owrang.queries[opts[1]]);
 			});
 		
 		if(this.frm.fields_dict.charge) {
@@ -95,7 +95,7 @@ erpnext.selling.SellingController = erpnext.TransactionController.extend({
 		}
 		
 		if(this.frm.fields_dict.sales_team && this.frm.fields_dict.sales_team.grid.get_field("sales_person")) {
-			this.frm.set_query("sales_person", "sales_team", erpnext.queries.not_a_group_filter);
+			this.frm.set_query("sales_person", "sales_team", owrang.queries.not_a_group_filter);
 		}
 	},
 	

@@ -972,7 +972,7 @@ Enter designation of this Contact,इस संपर्क के पद पर
 "Enter email id separated by commas, invoice will be mailed automatically on particular date","अल्पविराम के द्वारा अलग ईमेल आईडी दर्ज करें, चालान विशेष तिथि पर स्वचालित रूप से भेज दिया जाएगा"
 Enter items and planned qty for which you want to raise production orders or download raw materials for analysis.,"वस्तुओं और योजना बनाई मात्रा दर्ज करें, जिसके लिए आप उत्पादन के आदेश को बढ़ाने या विश्लेषण के लिए कच्चे माल के डाउनलोड करना चाहते हैं."
 Enter name of campaign if source of enquiry is campaign,अभियान का नाम दर्ज़ अगर जांच के स्रोत अभियान
-"Enter static url parameters here (Eg. sender=ERPNext, username=ERPNext, password=1234 etc.)","स्थैतिक यूआरएल यहाँ मानकों (Eg. प्रेषक = ERPNext, username = ERPNext, पासवर्ड = 1234 आदि) दर्ज करें"
+"Enter static url parameters here (Eg. sender=Owrang, username=Owrang, password=1234 etc.)","स्थैतिक यूआरएल यहाँ मानकों (Eg. प्रेषक = Owrang, username = Owrang, पासवर्ड = 1234 आदि) दर्ज करें"
 Enter the company name under which Account Head will be created for this Supplier,कंपनी का नाम है जिसके तहत इस प्रदायक लेखाशीर्ष के लिए बनाया जाएगा दर्ज करें
 Enter the date by which payments from customer is expected against this invoice.,तारीख है जिसके द्वारा ग्राहक से भुगतान इस चालान के खिलाफ उम्मीद है दर्ज करें.
 Enter url parameter for message,संदेश के लिए url पैरामीटर दर्ज करें
@@ -2628,7 +2628,7 @@ Set Value,मूल्य सेट
 Set prefix for numbering series on your transactions,अपने लेनदेन पर श्रृंखला नंबरिंग के लिए उपसर्ग सेट
 Set targets Item Group-wise for this Sales Person.,सेट आइटम इस बिक्री व्यक्ति के लिए समूह - वार लक्ष्य.
 "Set your background color, font and image (tiled)","अपनी पृष्ठभूमि रंग, फ़ॉन्ट और छवि (टाइलों) सेट"
-"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use ERPNext servers (emails will still be sent from your email id) or contact your email provider.","अपने निवर्तमान मेल SMTP सेटिंग्स यहाँ सेट. सभी प्रणाली सूचनाएं उत्पन्न, ईमेल इस मेल सर्वर से जाना जाएगा. यदि आप सुनिश्चित नहीं कर रहे हैं, इस लिए ERPNext सर्वर (ईमेल अभी भी अपनी ईमेल आईडी से भेजा जाएगा) का उपयोग करने के लिए या अपने ईमेल प्रदाता से संपर्क करने के लिए खाली छोड़ दें."
+"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use Owrang servers (emails will still be sent from your email id) or contact your email provider.","अपने निवर्तमान मेल SMTP सेटिंग्स यहाँ सेट. सभी प्रणाली सूचनाएं उत्पन्न, ईमेल इस मेल सर्वर से जाना जाएगा. यदि आप सुनिश्चित नहीं कर रहे हैं, इस लिए Owrang सर्वर (ईमेल अभी भी अपनी ईमेल आईडी से भेजा जाएगा) का उपयोग करने के लिए या अपने ईमेल प्रदाता से संपर्क करने के लिए खाली छोड़ दें."
 Setting Account Type helps in selecting this Account in transactions.,की स्थापना खाता प्रकार के लेनदेन में इस खाते का चयन करने में मदद करता है.
 Settings,सेटिंग्स
 Settings for About Us Page.,हमारे बारे में पृष्ठ के लिए सेटिंग्स.
@@ -2764,7 +2764,7 @@ Style,शैली
 Style Settings,शैली सेटिंग्स
 "Style represents the button color: Success - Green, Danger - Red, Inverse - Black, Primary - Dark Blue, Info - Light Blue, Warning - Orange","- ग्रीन, खतरा - लाल, उलटा - काले, प्राथमिक - डार्क ब्लू जानकारी, लाइट ब्लू, चेतावनी - ऑरेंज सफलता: शैली बटन रंग का प्रतिनिधित्व करता है"
 "Sub-currency. For e.g. ""Cent""",उप - मुद्रा. उदाहरण के लिए &quot;प्रतिशत&quot;
-Sub-domain provided by erpnext.com,Erpnext.com द्वारा प्रदान की उप - डोमेन
+Sub-domain provided by owrang.yellowen.com,Erpnext.com द्वारा प्रदान की उप - डोमेन
 Subcontract,उपपट्टा
 Subdomain,उपडोमेन
 Subject,विषय
@@ -3318,7 +3318,7 @@ english,अंग्रेज़ी
 envelope,लिफाफा
 español,español
 example: Next Day Shipping,उदाहरण: अगले दिन शिपिंग
-example: http://help.erpnext.com,उदाहरण: http://help.erpnext.com
+example: http://help.owrang.yellowen.com,उदाहरण: http://help.owrang.yellowen.com
 exclamation-sign,विस्मयादिबोधक हस्ताक्षर
 eye-close,आंख को बंद
 eye-open,आंख खोलने के

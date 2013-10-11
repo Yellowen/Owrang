@@ -8,13 +8,13 @@ wn.pages['stock-ledger'].onload = function(wrapper) {
 		single_column: true
 	});
 	
-	new erpnext.StockLedger(wrapper);
+	new owrang.StockLedger(wrapper);
 	wrapper.appframe.add_module_icon("Stock")
 }
 
 wn.require("app/js/stock_grid_report.js");
 
-erpnext.StockLedger = erpnext.StockGridReport.extend({
+owrang.StockLedger = owrang.StockGridReport.extend({
 	init: function(wrapper) {
 		this._super({
 			title: "Stock Ledger",

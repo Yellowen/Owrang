@@ -1,7 +1,7 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-erpnext.StockGridReport = wn.views.TreeGridReport.extend({
+owrang.StockGridReport = wn.views.TreeGridReport.extend({
 	get_item_warehouse: function(warehouse, item) {
 		if(!this.item_warehouse[item]) this.item_warehouse[item] = {};
 		if(!this.item_warehouse[item][warehouse]) this.item_warehouse[item][warehouse] = {

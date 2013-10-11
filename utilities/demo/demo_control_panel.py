@@ -9,5 +9,5 @@
           "cmd":"portal.utils.send_message",
           "subject":"Logged into Demo",
           "sender": webnotes.form_dict.lead_email,
-          "message": "via demo.erpnext.com"
+          "message": "via demo.owrang.yellowen.com"
         })

@@ -8,14 +8,14 @@ wn.pages['purchase-analytics'].onload = function(wrapper) {
 		single_column: true
 	});					
 	
-	new erpnext.PurchaseAnalytics(wrapper);
+	new owrang.PurchaseAnalytics(wrapper);
 	
 	wrapper.appframe.add_home_breadcrumb()
 	wrapper.appframe.add_module_icon("Buying")
 	wrapper.appframe.add_breadcrumb("icon-bar-chart")
 }
 
-erpnext.PurchaseAnalytics = wn.views.TreeGridReport.extend({
+owrang.PurchaseAnalytics = wn.views.TreeGridReport.extend({
 	init: function(wrapper) {
 		this._super({
 			title: "Purchase Analytics",

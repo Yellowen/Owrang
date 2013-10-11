@@ -1,7 +1,7 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-erpnext.POS = Class.extend({
+owrang.POS = Class.extend({
 	init: function(wrapper, frm) {
 		this.wrapper = wrapper;
 		this.frm = frm;

@@ -10,8 +10,8 @@ wn.require('app/utilities/doctype/sms_control/sms_control.js');
 wn.require('app/buying/doctype/purchase_common/purchase_common.js');
 wn.require('app/accounts/doctype/sales_invoice/pos.js');
 
-wn.provide("erpnext.stock");
-erpnext.stock.PurchaseReceiptController = erpnext.buying.BuyingController.extend({
+wn.provide("owrang.stock");
+owrang.stock.PurchaseReceiptController = owrang.buying.BuyingController.extend({
 	refresh: function() {
 		this._super();
 		
@@ -103,7 +103,7 @@ erpnext.stock.PurchaseReceiptController = erpnext.buying.BuyingController.extend
 });
 
 // for backward compatibility: combine new and previous states
-$.extend(cur_frm.cscript, new erpnext.stock.PurchaseReceiptController({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.stock.PurchaseReceiptController({frm: cur_frm}));
 
 cur_frm.fields_dict['supplier_address'].get_query = function(doc, cdt, cdn) {
 	return{

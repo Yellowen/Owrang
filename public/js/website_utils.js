@@ -1,7 +1,7 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-if(!window.erpnext) erpnext = {};
+if(!window.owrang) owrang = {};
 
 // Add / update a new Lead / Communication
 // subject, sender, description
@@ -16,13 +16,13 @@ wn.send_message = function(opts, btn) {
 };
 
 // for backward compatibility
-erpnext.send_message = wn.send_message;
+owrang.send_message = wn.send_message;
 
 // Setup the user tools
 //
 $(document).ready(function() {
 	// update login
-	erpnext.cart.set_cart_count();
+	owrang.cart.set_cart_count();
 	
 	// update profile
 	if(full_name) {
@@ -33,9 +33,9 @@ $(document).ready(function() {
 });
 
 // shopping cart
-if(!erpnext.cart) erpnext.cart = {};
+if(!owrang.cart) owrang.cart = {};
 
-$.extend(erpnext.cart, {
+$.extend(owrang.cart, {
 	update_cart: function(opts) {
 		if(!full_name) {
 			if(localStorage) {
@@ -57,7 +57,7 @@ $.extend(erpnext.cart, {
 					if(opts.callback)
 						opts.callback(r);
 					
-					erpnext.cart.set_cart_count();
+					owrang.cart.set_cart_count();
 				}
 			});
 		}

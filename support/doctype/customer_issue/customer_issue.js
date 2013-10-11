@@ -1,9 +1,9 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-wn.provide("erpnext.support");
+wn.provide("owrang.support");
 // TODO commonify this code
-erpnext.support.CustomerIssue = wn.ui.form.Controller.extend({
+owrang.support.CustomerIssue = wn.ui.form.Controller.extend({
 	refresh: function() {
 		if((cur_frm.doc.status=='Open' || cur_frm.doc.status == 'Work In Progress')) {
 			cur_frm.add_custom_button('Make Maintenance Visit', this.make_maintenance_visit)
@@ -31,7 +31,7 @@ erpnext.support.CustomerIssue = wn.ui.form.Controller.extend({
 	}
 });
 
-$.extend(cur_frm.cscript, new erpnext.support.CustomerIssue({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.support.CustomerIssue({frm: cur_frm}));
 
 cur_frm.cscript.onload = function(doc,cdt,cdn){
 	if(!doc.status) 

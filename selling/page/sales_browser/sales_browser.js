@@ -25,7 +25,7 @@ pscript['onload_Sales Browser'] = function(wrapper){
 			args: {ctype: ctype},
 			callback: function(r) {
 				var root = r.message[0]["value"];
-				erpnext.sales_chart = new erpnext.SalesChart(ctype, root, 
+				owrang.sales_chart = new owrang.SalesChart(ctype, root, 
 					$(wrapper)
 						.find(".layout-main-section")
 						.css({
@@ -45,12 +45,12 @@ pscript['onshow_Sales Browser'] = function(wrapper){
 
 	wrapper.appframe.set_title(ctype+' Tree')
 
-	if(erpnext.sales_chart && erpnext.sales_chart.ctype != ctype) {
+	if(owrang.sales_chart && owrang.sales_chart.ctype != ctype) {
 		wrapper.make_tree();
 	}
 };
 
-erpnext.SalesChart = Class.extend({
+owrang.SalesChart = Class.extend({
 	init: function(ctype, root, parent) {
 		$(parent).empty();
 		var me = this;
@@ -87,22 +87,22 @@ erpnext.SalesChart = Class.extend({
 		var node_links = [];
 		
 		if (wn.model.can_read(this.ctype)) {
-			node_links.push('<a onclick="erpnext.sales_chart.open();">Edit</a>');
+			node_links.push('<a onclick="owrang.sales_chart.open();">Edit</a>');
 		}
 
 		if(data.expandable) {
 			if (wn.boot.profile.can_create.indexOf(this.ctype) !== -1 ||
 					wn.boot.profile.in_create.indexOf(this.ctype) !== -1) {
-				node_links.push('<a onclick="erpnext.sales_chart.new_node();">Add Child</a>');
+				node_links.push('<a onclick="owrang.sales_chart.new_node();">Add Child</a>');
 			}
 		}
 
 		if (wn.model.can_write(this.ctype)) {
-			node_links.push('<a onclick="erpnext.sales_chart.rename()">Rename</a>');
+			node_links.push('<a onclick="owrang.sales_chart.rename()">Rename</a>');
 		};
 	
 		if (wn.model.can_delete(this.ctype)) {
-			node_links.push('<a onclick="erpnext.sales_chart.delete()">Delete</a>');
+			node_links.push('<a onclick="owrang.sales_chart.delete()">Delete</a>');
 		};
 		
 		link.toolbar.append(node_links.join(" | "));

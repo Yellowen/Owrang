@@ -3,9 +3,9 @@
 
 
 wn.require("public/app/js/utils.js");
-wn.provide("erpnext.hr");
+wn.provide("owrang.hr");
 
-erpnext.hr.AttendanceControlPanel = wn.ui.form.Controller.extend({
+owrang.hr.AttendanceControlPanel = wn.ui.form.Controller.extend({
 	onload: function() {
 		this.frm.set_value("att_fr_date", get_today());
 		this.frm.set_value("att_to_date", get_today());
@@ -84,4 +84,4 @@ erpnext.hr.AttendanceControlPanel = wn.ui.form.Controller.extend({
 	}
 })
 
-cur_frm.cscript = new erpnext.hr.AttendanceControlPanel({frm: cur_frm});
+cur_frm.cscript = new owrang.hr.AttendanceControlPanel({frm: cur_frm});

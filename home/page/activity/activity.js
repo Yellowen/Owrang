@@ -14,7 +14,7 @@ wn.pages['activity'].onload = function(wrapper) {
 		method: 'home.page.activity.activity.get_feed',
 		parent: $(wrapper).find(".layout-main"),
 		render_row: function(row, data) {
-			new erpnext.ActivityFeed(row, data);
+			new owrang.ActivityFeed(row, data);
 		}
 	});
 	list.run();
@@ -27,8 +27,8 @@ wn.pages['activity'].onload = function(wrapper) {
 	}
 }
 
-erpnext.last_feed_date = false;
-erpnext.ActivityFeed = Class.extend({
+owrang.last_feed_date = false;
+owrang.ActivityFeed = Class.extend({
 	init: function(row, data) {
 		this.scrub_data(data);
 		this.add_date_separator(row, data);
@@ -67,7 +67,7 @@ erpnext.ActivityFeed = Class.extend({
 	},
 	add_date_separator: function(row, data) {
 		var date = dateutil.str_to_obj(data.modified);
-		var last = erpnext.last_feed_date;
+		var last = owrang.last_feed_date;
 		
 		if((last && dateutil.obj_to_str(last) != dateutil.obj_to_str(date)) || (!last)) {
 			var diff = dateutil.get_day_diff(new Date(), date);
@@ -80,6 +80,6 @@ erpnext.ActivityFeed = Class.extend({
 			}
 			$(row).html(repl('<div class="date-sep">%(date)s</div>', {date: pdate}));
 		}
-		erpnext.last_feed_date = date;
+		owrang.last_feed_date = date;
 	}
 })

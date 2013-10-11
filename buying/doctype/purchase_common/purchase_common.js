@@ -6,10 +6,10 @@
 // cur_frm.cscript.tname - Details table name
 // cur_frm.cscript.fname - Details fieldname
 
-wn.provide("erpnext.buying");
+wn.provide("owrang.buying");
 wn.require("app/js/transaction.js");
 
-erpnext.buying.BuyingController = erpnext.TransactionController.extend({
+owrang.buying.BuyingController = owrang.TransactionController.extend({
 	onload: function() {
 		this.setup_queries();
 		this._super();
@@ -31,7 +31,7 @@ erpnext.buying.BuyingController = erpnext.TransactionController.extend({
 			["supplier_address", "supplier_filter"]], 
 			function(i, opts) {
 				if(me.frm.fields_dict[opts[0]]) 
-					me.frm.set_query(opts[0], erpnext.queries[opts[1]]);
+					me.frm.set_query(opts[0], owrang.queries[opts[1]]);
 			});
 		
 		if(this.frm.fields_dict.supplier) {

@@ -36,7 +36,7 @@ $(document).ready(function() {
 	})
 	
 	$("#item-add-to-cart button").on("click", function() {
-		erpnext.cart.update_cart({
+		owrang.cart.update_cart({
 			item_code: item_code,
 			qty: 1,
 			callback: function(r) {
@@ -50,7 +50,7 @@ $(document).ready(function() {
 	});
 	
 	$("#item-update-cart button").on("click", function() {
-		erpnext.cart.update_cart({
+		owrang.cart.update_cart({
 			item_code: item_code,
 			qty: $("#item-update-cart input").val(),
 			btn: this,

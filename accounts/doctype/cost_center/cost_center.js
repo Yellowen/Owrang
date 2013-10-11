@@ -1,8 +1,8 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd.
 // License: GNU General Public License v3. See license.txt
 
-wn.provide("erpnext.accounts");
-erpnext.accounts.CostCenterController = wn.ui.form.Controller.extend({
+wn.provide("owrang.accounts");
+owrang.accounts.CostCenterController = wn.ui.form.Controller.extend({
 	onload: function() {
 		this.setup_queries();
 	},
@@ -33,7 +33,7 @@ erpnext.accounts.CostCenterController = wn.ui.form.Controller.extend({
 	}
 });
 
-$.extend(cur_frm.cscript, new erpnext.accounts.CostCenterController({frm: cur_frm}));
+$.extend(cur_frm.cscript, new owrang.accounts.CostCenterController({frm: cur_frm}));
 
 cur_frm.cscript.refresh = function(doc, cdt, cdn) {
 	var intro_txt = '';

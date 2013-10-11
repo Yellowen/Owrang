@@ -330,7 +330,7 @@ Attendance To Date,حضور و غیاب به تاریخ
 Attendance can not be marked for future dates,حضور و غیاب می تواند مشخص شده باشد برای تاریخ آینده
 Attendance for the employee: ,حضور برای کارمند:
 Attendance record.,ثبت حضور و غیاب.
-Attributions,Attributions
+Attributions,مستندات
 Authorization Control,مجوز کنترل
 Authorization Rule,قانون مجوز
 Auto Accounting For Stock Settings,حسابداری برای سهام تنظیمات خودکار
@@ -1001,7 +1001,7 @@ Enter designation of this Contact,تعیین این تماس را وارد کن�
 "Enter email id separated by commas, invoice will be mailed automatically on particular date",را وارد کنید ایمیل با کاما جدا شده، فاکتور را به طور خودکار در تاریخ خاص از طریق پست
 Enter items and planned qty for which you want to raise production orders or download raw materials for analysis.,اقلام و تعداد برنامه ریزی شده که شما می خواهید به جمع آوری سفارشات تولید و یا مواد اولیه برای تجزیه و تحلیل دانلود وارد کنید.
 Enter name of campaign if source of enquiry is campaign,اگر منبع درخواست کمپین نام مبارزات انتخاباتی را وارد کنید
-"Enter static url parameters here (Eg. sender=ERPNext, username=ERPNext, password=1234 etc.)",پارامترهای استاتیک آدرس اینجا را وارد کنید (Eg. فرستنده = ERPNext نام کاربری = ERPNext، رمز عبور = 1234 و غیره.)
+"Enter static url parameters here (Eg. sender=Owrang, username=Owrang, password=1234 etc.)",پارامترهای استاتیک آدرس اینجا را وارد کنید (Eg. فرستنده = Owrang نام کاربری = Owrang، رمز عبور = 1234 و غیره.)
 Enter the company name under which Account Head will be created for this Supplier,نام شرکت که سر حساب برای این فروشنده ایجاد خواهد شد را وارد کنید
 Enter the date by which payments from customer is expected against this invoice.,وارد کنید تاریخ توسط پرداخت که از مشتری در برابر این فاکتور به انتظار می رود.
 Enter url parameter for message,پارامتر url برای پیام وارد کنید
@@ -2682,7 +2682,7 @@ Set Value,تعیین ارزش
 Set prefix for numbering series on your transactions,مجموعه پیشوند برای سری شماره در معاملات خود را
 Set targets Item Group-wise for this Sales Person.,اهداف مورد Group-wise برای فرد فروش این مجموعه.
 "Set your background color, font and image (tiled)",تنظیم رنگ پس زمینه، فونت و تصویر (مفروش)
-"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use ERPNext servers (emails will still be sent from your email id) or contact your email provider.",شما ایمیل خروجی SMTP تنظیمات اینجا تنظیم. تمام سیستم اعلان های تولید شده، ایمیل خواهد شد از این سرور ایمیل. اگر شما مطمئن نیستید، خالی به استفاده از سرور ERPNext (ایمیل هنوز ارسال خواهد شد از شناسه الکترونیکی شما) بگذارید و یا ارائه دهنده پست الکترونیکی خود تماس بگیرید.
+"Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use Owrang servers (emails will still be sent from your email id) or contact your email provider.",شما ایمیل خروجی SMTP تنظیمات اینجا تنظیم. تمام سیستم اعلان های تولید شده، ایمیل خواهد شد از این سرور ایمیل. اگر شما مطمئن نیستید، خالی به استفاده از سرور Owrang (ایمیل هنوز ارسال خواهد شد از شناسه الکترونیکی شما) بگذارید و یا ارائه دهنده پست الکترونیکی خود تماس بگیرید.
 Setting Account Type helps in selecting this Account in transactions.,نوع حساب تنظیمات در این حساب را در معاملات انتخاب می کند.
 Settings,تنظیمات
 Settings for Accounts,تنظیمات حساب
@@ -2812,7 +2812,7 @@ Style,سبک
 Style Settings,سبک تنظیمات
 "Style represents the button color: Success - Green, Danger - Red, Inverse - Black, Primary - Dark Blue, Info - Light Blue, Warning - Orange",نشان دهنده سبک رنگ دکمه: موفقیت - هشدار دهنده خطر - قرمز معکوس - سیاه و سفید، اولیه - سرمه، اطلاعات - نور آبی، سبز - نارنجی
 "Sub-currency. For e.g. ""Cent""",ارز زیر. برای مثال \""درصد\""
-Sub-domain provided by erpnext.com,زیر دامنه ارائه شده توسط erpnext.com
+Sub-domain provided by owrang.yellowen.com,زیر دامنه ارائه شده توسط owrang.yellowen.com
 Subcontract,قرارداد فرعی
 Subdomain,زیر دامنه
 Subject,موضوع
@@ -3365,7 +3365,7 @@ eg. Cheque Number,به عنوان مثال. شماره چک
 eject,خارج کردن
 envelope,پاکت
 example: Next Day Shipping,مثال: بعدی روز حمل و نقل
-example: http://help.erpnext.com,مثال: http:\/\/help.erpnext.com
+example: http://help.owrang.yellowen.com,مثال: http:\/\/help.owrang.yellowen.com
 exclamation-sign,علامت تعجب
 eye-close,چشم بستن
 eye-open,چشم باز
