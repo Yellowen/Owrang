@@ -5,7 +5,7 @@
 ---
 ### Hiding Unused Features
 
-As you have seen from this manual that ERPNext contains tons of features which you may not use. We have observed that most users start with using 20% of the features, though a different 20%. To hide fields belonging to features you dont require, go to:
+As you have seen from this manual that Owrang contains tons of features which you may not use. We have observed that most users start with using 20% of the features, though a different 20%. To hide fields belonging to features you dont require, go to:
 
 > Setup > Tools > Hide/Unhide Features
 

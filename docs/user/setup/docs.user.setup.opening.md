@@ -14,7 +14,7 @@ To setup your accounts and stock correctly you will need accurate data to work w
 
 ### Opening Accounts
 
-We usually recommend that you start using accounting in a new financial year, but you could start midway too. To setup your accounts, you will need the following for the “day” you start using accounting in ERPNext:
+We usually recommend that you start using accounting in a new financial year, but you could start midway too. To setup your accounts, you will need the following for the “day” you start using accounting in Owrang:
 
 Opening capital accounts - like your shareholder’s (or owner’) capital, loans, bank balances on that day.
 List of outstanding sales and purchase invoices (Payables and Receivables).
@@ -28,7 +28,7 @@ A nice way to simplify opening is to create temporary accounts for assets and li
 
 #### The Opening Entry
 
-In ERPNext Opening Accounts are setup by submitting a special Journal Entries (Journal Voucher).
+In Owrang Opening Accounts are setup by submitting a special Journal Entries (Journal Voucher).
 
 Note: Make sure to set “Is Opening” as “Yes” in the More Info section.
 

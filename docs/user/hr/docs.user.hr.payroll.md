@@ -3,7 +3,7 @@
 	"_label": "Salary and Payroll"
 }
 ---
-To process Payroll in ERPNext,
+To process Payroll in Owrang,
 
 1. Create Salary Structures for all Employees.
 1. Generate Salary Slips via the Salary Manager Tool.
@@ -27,9 +27,9 @@ The Salary Structure represents how Salaries are calculated based on Earnings an
 
 ### Leave Without Pay (LWP)
 
-Leave Without Pay (LWP) happens when an Employee runs out of allocated leaves or takes a leave without an approval (via Leave Application). If you want ERPNext to automatically deduct salary in case of LWP, then you must check on the “Apply LWP” column in the Earning Type and Deduction Type masters. The amount of pay cut is the proportion of LWP days divided by the total working days for the month (based on the Holiday List).
+Leave Without Pay (LWP) happens when an Employee runs out of allocated leaves or takes a leave without an approval (via Leave Application). If you want Owrang to automatically deduct salary in case of LWP, then you must check on the “Apply LWP” column in the Earning Type and Deduction Type masters. The amount of pay cut is the proportion of LWP days divided by the total working days for the month (based on the Holiday List).
 
-If you don’t want ERPNext to manage LWP, just don’t click on LWP in any of the Earning Types and Deduction Types.
+If you don’t want Owrang to manage LWP, just don’t click on LWP in any of the Earning Types and Deduction Types.
 
 ---
 

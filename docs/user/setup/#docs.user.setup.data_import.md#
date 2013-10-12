@@ -72,3 +72,4 @@ Owrang also allows you to overwrite all / certain columns. If you want to update
 Owrang restricts the amount of data you can upload in one file. Though the number may vary based on the type of data. It is usually safe to upload around 1000 rows of a table at one go. If the system will not accept, then you will see an error.
 
 Why is this? Uploading a lot of data can cause your system to crash, specially if there are other users doing things in parallel. Hence Owrang restricts the number of “writes” you can process in one request.
+

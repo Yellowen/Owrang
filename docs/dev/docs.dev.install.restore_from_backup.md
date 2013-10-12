@@ -1,6 +1,6 @@
 ---
 {
-	"_label": "Restoring From ERPNext Backup"
+	"_label": "Restoring From Owrang Backup"
 }
 ---
 
@@ -15,7 +15,7 @@
 		gunzip [DATABASE BACKUP FILE.sql.gz]
 		tar xvf [FILES BACKUP.tar]
 
-* Go to your ERPNext installation folder
+* Go to your Owrang installation folder
 * When restoring from database, the 'Administrator' user password gets reset to 'admin'. To set a better password when restoring, set admin_password variable in conf.py to the desired 'Administrator' user password.
 * Restore database using:
 

@@ -14,7 +14,7 @@ etc. and book your Profit or Loss.
 
 By doing this, your Income and Expense Accounts become zero .You start a new Fiscal Year (or period) with a balanced Balance Sheet and fresh Profit and Loss account.
 
-In ERPNext after making all the special entries via Journal Voucher, you can make all your Income and Expense accounts to zero via:
+In Owrang after making all the special entries via Journal Voucher, you can make all your Income and Expense accounts to zero via:
 
 > Accounts > Tools > Period Closing Voucher
 

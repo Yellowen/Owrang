@@ -3,7 +3,7 @@
 	"_label": "Web Service API"
 }
 ---
-All communication with the ERPNext server happens via web services using HTTP requests and passing data via JSON (Javascript Object Notation). Using web requests you can insert, update, query, run public triggers etc. The basic scheme is as follows:
+All communication with the Owrang server happens via web services using HTTP requests and passing data via JSON (Javascript Object Notation). Using web requests you can insert, update, query, run public triggers etc. The basic scheme is as follows:
 
 1. All API calls are to me made to `server.py` on your public folder of your erpnext account. For hosted users, it is (yourdomain.erpnext.com).
 1. The `cmd` parameter points to the python function to be executed.
@@ -50,7 +50,7 @@ You can use the `webclient.py` module as an example of how to access data using 
 
 ### Passing and Receiving Documents (`doclist`)
 
-To insert or update documents in ERPNext you have to pass them as a JSON Object. The structure of a Document is a list of plain objects (called `doclist`). The `doclist`
+To insert or update documents in Owrang you have to pass them as a JSON Object. The structure of a Document is a list of plain objects (called `doclist`). The `doclist`
 contains the the parent document and any child documents (if they are present).
 
 Example:
@@ -69,7 +69,7 @@ Example:
 
 ### webnotes.client
 
-`webnotes.client` is the easiest way to interact with the ERPNext Server. It contains
+`webnotes.client` is the easiest way to interact with the Owrang Server. It contains
 a bunch of server-side public methods that can be used by any client.
 
 - [Code](https://github.com/webnotes/wnframework/blob/master/webnotes/client.py)
@@ -78,7 +78,7 @@ a bunch of server-side public methods that can be used by any client.
 ### Example
 
 Here is an example how you can use the webclient module to insert a new Sales Invoice
-in ERPNext.
+in Owrang.
 
 	from webclient import *
  

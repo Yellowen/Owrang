@@ -4,7 +4,7 @@
 }
 ---
 
-ERPNext has a role-based permission system, which means that you can assign Roles to Users, and permissions on Roles.Each ERPNext user has a Profile. The Profile contains the user’s email and authentication and can be set from:
+Owrang has a role-based permission system, which means that you can assign Roles to Users, and permissions on Roles.Each Owrang user has a Profile. The Profile contains the user’s email and authentication and can be set from:
 
 > Setup > Users and Permissions > Users
 
@@ -30,7 +30,7 @@ Enter a new password and select the image of the user. Write a small description
 
 #### Step 3 :Setting Roles and Email Settings
 
-Check the boxes which the User can access. ERPNext comes with a bunch of predefined roles. 
+Check the boxes which the User can access. Owrang comes with a bunch of predefined roles. 
 Enter his email settings. The message will appear at the end of every mail. 
 
 ![User](img/user3.png)

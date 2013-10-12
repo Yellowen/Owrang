@@ -25,4 +25,4 @@ If your business involves physical goods, buying is one of your core business ac
 
 Buying in right amounts, in right quantities, can affect your cash flow and profitability.
 
-ERPNext contains a set of transactions that will make your buying process as efficient and seamless as possible.
+Owrang contains a set of transactions that will make your buying process as efficient and seamless as possible.

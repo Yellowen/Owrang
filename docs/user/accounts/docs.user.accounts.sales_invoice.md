@@ -55,7 +55,7 @@ Due Date: The date on which the payment is due (if you have sold on credit). Thi
 
 If you have a contract with a Customer where you bill the Customer on a monthly, quarterly, half-yearly or annual basis, you can check the “Recurring Invoice” box. Here you can fill in the details of how frequently you want to bill this Invoice and the period for which the contract is valid.
 
-ERPNext will automatically create new Invoices and mail it to the email ids you set.
+Owrang will automatically create new Invoices and mail it to the email ids you set.
 
 ---
 
@@ -63,6 +63,6 @@ ERPNext will automatically create new Invoices and mail it to the email ids you 
 
 If you want to give an Invoice to a Customer to make a payment before you deliver, i.e. you operate on a payment first basis, you should create a Quotation and title it as a “Pro-forma Invoice” (or something similar) using the Print Heading feature. 
 
-“Pro Forma” means for formality. Why do this? Because if you book a Sales Invoice it will show up in your “Accounts Receivable” and “Income”. This is not ideal as your Customer may or may not decide to pay up. But since your Customer wants an “Invoice”, you could give the Customer a Quotation (in ERPNext) titled as “Pro Forma Invoice”. This way everyone is happy.
+“Pro Forma” means for formality. Why do this? Because if you book a Sales Invoice it will show up in your “Accounts Receivable” and “Income”. This is not ideal as your Customer may or may not decide to pay up. But since your Customer wants an “Invoice”, you could give the Customer a Quotation (in Owrang) titled as “Pro Forma Invoice”. This way everyone is happy.
 
 This is a fairly common practice. We follow this at Web Notes too.

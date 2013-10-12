@@ -3,7 +3,7 @@
 	"_label": "Custom Field"
 }
 ---
-A very common customization is adding of custom fields. You can add Custom Fields in any Master or Transaction in ERPNext. To add a Custom Field, go to:
+A very common customization is adding of custom fields. You can add Custom Fields in any Master or Transaction in Owrang. To add a Custom Field, go to:
 
 > Setup > Custom Field > New Custom Field
 
@@ -21,4 +21,4 @@ and save the Custom Field. When you open a new / existing form of the type you s
 
 #### Naming
 
-Many times you want your fields to be carried over from one form to another. For example, you may have added a Custom Field in Quotation that you want to include in Sales Order when a Sales Order is created from the Quotation. This is simple in ERPNext, just make sure the fields have the same “fieldname”
+Many times you want your fields to be carried over from one form to another. For example, you may have added a Custom Field in Quotation that you want to include in Sales Order when a Sales Order is created from the Quotation. This is simple in Owrang, just make sure the fields have the same “fieldname”

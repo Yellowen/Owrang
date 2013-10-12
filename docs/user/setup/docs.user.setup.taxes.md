@@ -3,14 +3,14 @@
 	"_label": "Setting up Taxes"
 }
 ---
-One of the primary motivator for compulsory use of accounting tools is calculation of Taxes. You may or may not make money but your government will (to help your country be safe and prosperous). And if you don’t calculate your taxes correctly, they get very unhappy. Ok, philosophy aside, ERPNext allows you to make configurable tax templates that you can apply to your sales or purchase.
+One of the primary motivator for compulsory use of accounting tools is calculation of Taxes. You may or may not make money but your government will (to help your country be safe and prosperous). And if you don’t calculate your taxes correctly, they get very unhappy. Ok, philosophy aside, Owrang allows you to make configurable tax templates that you can apply to your sales or purchase.
 
 ### Tax Accounts
 
 For Tax Accounts that you want to use in the tax templates, you must mention them as type “Tax” in your Chart of Accounts. Some Item-tax features are given below :
 
 - **Discount**: The maximum Discount that can be applied on an Item can be fixed in the Item master. Read [Discount](docs.user.selling.discount.html)
-- **Inclusive and Exclusive Tax**: ERPNext allows you to enter Item rates which are tax inclusive.
+- **Inclusive and Exclusive Tax**: Owrang allows you to enter Item rates which are tax inclusive.
 - **Flat Discount**: This feature will be added soon.
 - **Exception to the rule**: Item tax settings are required only if a particular Item has a different tax rate than the rate defined in the standard tax Account
 
@@ -20,7 +20,7 @@ For Tax Accounts that you want to use in the tax templates, you must mention the
 
 You must usually collect taxes from your Customer and pay them to the government. At times, you may have to pay multiple taxes to multiple government bodies like local government, state or provincial and federal or central government.
 
-The way ERPNext sets up taxes is via templates. Other types of charges that may apply to your invoices (like shipping, insurance etc.) can also be configured as taxes.
+The way Owrang sets up taxes is via templates. Other types of charges that may apply to your invoices (like shipping, insurance etc.) can also be configured as taxes.
 
 To create a new sales tax template called Sales Taxes and Charges Master, you have to go to:
 

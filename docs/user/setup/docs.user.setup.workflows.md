@@ -3,7 +3,7 @@
 	"_label": "Workflows"
 }
 ---
-In order to allow multiple people to submit  multiple requests, for approvals, by multiple users, ERPNext requires you to fill the workflow conditions. ERPNext tracks the multiple permissions before submission.
+In order to allow multiple people to submit  multiple requests, for approvals, by multiple users, Owrang requires you to fill the workflow conditions. Owrang tracks the multiple permissions before submission.
 
 Example of a leave application workflow is given below:
 

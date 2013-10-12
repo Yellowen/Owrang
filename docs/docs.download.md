@@ -1,6 +1,6 @@
 ---
 {
-	"_label": "Download ERPNext",
+	"_label": "Download Owrang",
 	"_icon": "download"
 }
 ---
@@ -47,12 +47,12 @@ Created on 15th May 2013.
 
 #### wnframework
 
-The web application framework that powers ERPNext:
+The web application framework that powers Owrang:
 
 - [https://github.com/webnotes/wnframework](https://github.com/webnotes/wnframework)
 
 #### erpnext
 
-ERPNext modules:
+Owrang modules:
 
 - [https://github.com/webnotes/erpnext](https://github.com/webnotes/erpnext)

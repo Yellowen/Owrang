@@ -3,7 +3,7 @@
 	"_label": "Initial Setup"
 }
 ---`
-After a successful sign-up / installation of ERPNext, on your first sign-in, you will get a form to fill.
+After a successful sign-up / installation of Owrang, on your first sign-in, you will get a form to fill.
 
 ![First Screen](img/setup-first-screen.png)
 ￼

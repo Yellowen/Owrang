@@ -10,7 +10,7 @@ There are generally two different methods of accounting for inventory:
 
 ### **Auto / Perpetual Inventory**
 
-In this process, for each stock transactions, the system posts relevant accounting entries to sync stock balance and accounting balance. This is the default setting in ERPNext for new accounts.
+In this process, for each stock transactions, the system posts relevant accounting entries to sync stock balance and accounting balance. This is the default setting in Owrang for new accounts.
 
 When you buy and receive items, those items are booked as the company’s assets (stock-in-hand / fixed-assets). When you sell and deliver those items, an expense (cost-of-goods-sold) equal to the buying cost of the items is booked. General Ledger entries are made after every stock transaction.  As a result, the value as per Stock Ledger always remains same with the relevant account balance. This improves accuracy of Balance Sheet and Profit and Loss statement.
 

@@ -43,7 +43,7 @@
   "name": "Email Settings"
  }, 
  {
-  "description": "Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use ERPNext servers (emails will still be sent from your email id) or contact your email provider.", 
+  "description": "Set your outgoing mail SMTP settings here. All system generated notifications, emails will go from this mail server. If you are not sure, leave this blank to use Owrang servers (emails will still be sent from your email id) or contact your email provider.", 
   "doctype": "DocField", 
   "fieldname": "outgoing_mails", 
   "fieldtype": "Section Break", 

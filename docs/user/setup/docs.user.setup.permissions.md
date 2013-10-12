@@ -3,9 +3,9 @@
 	"_label": "Setting up Permissions"
 }
 ---
-ERPNext has a role-based permission system, which means that you can assign Roles to Users, and Permissions on Roles.
+Owrang has a role-based permission system, which means that you can assign Roles to Users, and Permissions on Roles.
 
-ERPNext has a very powerful permission structure that will allow you to set permissions right up to the field level.
+Owrang has a very powerful permission structure that will allow you to set permissions right up to the field level.
 
 Permissions are applied on:
 
@@ -17,7 +17,7 @@ Permissions are applied on:
 
 When you define a “match” rule, the User will only be allowed to access (or write) the document if the User has one or more such values (e.g. Company, Territories) and the document has the same values.   For example, if you have set a match rule on Sales Order for a particular Role based on “territory”, then all users of that Role will only be allowed to view Sales Orders of that Territory. Let us walk through an example.
 
-ERPNext comes with pre-set permission rules that you can change anytime by going to
+Owrang comes with pre-set permission rules that you can change anytime by going to
 
 > Setup > Users and Permissions > Permission Manager
 

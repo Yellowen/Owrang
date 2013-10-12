@@ -23,18 +23,18 @@ Large businesses have the advantage of using advanced data systems to manage the
 
 ---
 
-## What is ERPNext?
+## What is Owrang?
 
-ERPNext helps you to manage all your business information in one application and use it to manage operations and take decisions based on data.
-
-
-
-![ERPNext-Introduction](img/erpnext-introduction.png)
+Owrang helps you to manage all your business information in one application and use it to manage operations and take decisions based on data.
 
 
 
+![Owrang-Introduction](img/erpnext-introduction.png)
 
-Among other things, ERPNext will help you to:
+
+
+
+Among other things, Owrang will help you to:
 
 - Track all Invoices and Payments.
 - Know what quantity of which product is available in stock.
@@ -50,9 +50,9 @@ And a lot lot lot more.
 
 ---
 
-## Why Should I Use ERPNext?
+## Why Should I Use Owrang?
 
-ERPNext is a modern tool that covers not only accounting but also all other business functions, on an integrated platform. It has many benefits over both traditional accounting as well as ERP applications.
+Owrang is a modern tool that covers not only accounting but also all other business functions, on an integrated platform. It has many benefits over both traditional accounting as well as ERP applications.
 
 ### Benefits over traditional accounting software:
 

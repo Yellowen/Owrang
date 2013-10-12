@@ -7,9 +7,9 @@
 	]
 }
 ---
-An Item is your company's product or a service.The term Item is applicable to your core products as well as your raw materials. It can be a product or service that you buy/sell from your customers/ suppliers. ERPNext allows you to manage all sorts of items like raw-materials, sub-assemblies, finished goods, item variants and service items. 
+An Item is your company's product or a service.The term Item is applicable to your core products as well as your raw materials. It can be a product or service that you buy/sell from your customers/ suppliers. Owrang allows you to manage all sorts of items like raw-materials, sub-assemblies, finished goods, item variants and service items. 
 
-ERPNext is optimized for itemized management of your sales and purchase. If you are in services, you can create an Item for each services that your offer. Completing the Item Master is very essential for successful implementation of ERPNext.
+Owrang is optimized for itemized management of your sales and purchase. If you are in services, you can create an Item for each services that your offer. Completing the Item Master is very essential for successful implementation of Owrang.
 
 ## Item Properties
 
@@ -29,16 +29,16 @@ To  upload an image for your icon that will appear in all transactions, save the
 
 ### Inventory : Warehouse and Stock Setting
 
-In ERPNext, you can select  different type of Warehouses to stock your different Items. This can be selected based on Item types. It could be Fixed Asset Item, Stock Item or even Manufacturing Item. 
+In Owrang, you can select  different type of Warehouses to stock your different Items. This can be selected based on Item types. It could be Fixed Asset Item, Stock Item or even Manufacturing Item. 
 
-- **Stock Item:** If you are maintaining stock of this Item in your Inventory, ERPNext will make a stock ledger entry for each transaction of this item.
+- **Stock Item:** If you are maintaining stock of this Item in your Inventory, Owrang will make a stock ledger entry for each transaction of this item.
 - **Default Warehouse:** This is the Warehouse that is automatically selected in your transactions. 
 - **Allowance Percentage:** This is the  percent by which you will be allowed to over-bill or  over-deliver this Item. If not set, it will select from  the Global Defaults. 
 - **Valuation Method:** There are two options to maintain valuation of stock. FIFO (first in -  first out) and Moving Average. To understand this topic in detail please visit “ Item Valuation, FIFO and Moving Average”.
 
 ### Serialized and Batched Inventory
 
-These numbers help to track individual units or batches of Items which you sell. It also tracks warranty and returns. In case any individual Item is recalled by the supplier the number system helps to track individual Item. The numbering system  also manages expiry dates. Please note that if you sell your items in thousands, and if the items are very small like pens or erasers, you need not serialize them. In ERPNext, you will have to mention the serial number in some accounting entries. To create serial numbers you will have to manually create all the numbers in your entries. If your product is not a big consumer durable Item, if it has no warranty and has no chances of being  recalled, avoid giving serial numbers. 
+These numbers help to track individual units or batches of Items which you sell. It also tracks warranty and returns. In case any individual Item is recalled by the supplier the number system helps to track individual Item. The numbering system  also manages expiry dates. Please note that if you sell your items in thousands, and if the items are very small like pens or erasers, you need not serialize them. In Owrang, you will have to mention the serial number in some accounting entries. To create serial numbers you will have to manually create all the numbers in your entries. If your product is not a big consumer durable Item, if it has no warranty and has no chances of being  recalled, avoid giving serial numbers. 
 
 > Important: Once you mark an item as serialized or batched or neither, you cannot change it after you have made any stock entry.
 

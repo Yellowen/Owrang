@@ -18,12 +18,12 @@ You may encounter these terms, so lets clarify:
 - Rate: Rate at which the transaction takes place.
 - Valuation Rate: Rate at which the items value is set for your valuation.
 
-There are two major ways in which ERPNext values your items.
+There are two major ways in which Owrang values your items.
 
-- **FIFO (First In First Out):** In this system, ERPNext assumes that you will consume / sell those Items first which you bought first. For example, if you buy an Item at price X and then after a few days at price Y, whenever you sell your Item, ERPNext will reduce the quantity of the Item priced at X first and then Y.
+- **FIFO (First In First Out):** In this system, Owrang assumes that you will consume / sell those Items first which you bought first. For example, if you buy an Item at price X and then after a few days at price Y, whenever you sell your Item, Owrang will reduce the quantity of the Item priced at X first and then Y.
 
 ![FIFO](img/fifo.png)
 
-- **Moving Average:** In this method, ERPNext assumes that the value of the item at any point is the average price of the units of that Item in stock. For example, if the value of an Item is X in a Warehouse with quantity Y and another quantity Y1 is added to the Warehouse at cost X1, the new value X2 would be:
+- **Moving Average:** In this method, Owrang assumes that the value of the item at any point is the average price of the units of that Item in stock. For example, if the value of an Item is X in a Warehouse with quantity Y and another quantity Y1 is added to the Warehouse at cost X1, the new value X2 would be:
 
 > New Value X2 = (X * Y + X1 * Y1) / (Y + Y1)

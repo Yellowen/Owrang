@@ -39,7 +39,7 @@ To create new Employee go to:
 
 ### Numbering Employees (Employee ID)
 
-By default, in ERPNext Employee Records are Numbered. You can have multiple series if you are a really large company and want to have separate numbering series for separate locations etc. You can set the numbering series just like any other transaction by going to:
+By default, in Owrang Employee Records are Numbered. You can have multiple series if you are a really large company and want to have separate numbering series for separate locations etc. You can set the numbering series just like any other transaction by going to:
 
 > Setup > Customize  > Document Numbering Series.
 

@@ -3,7 +3,7 @@
 	"_label": "Sales Return"
 }
 ---
-Goods sold being returned is quite a common practice in Business. They could be returned by the customer on quality issues, non-delivery on agreed date, or any other reason. ERPNext allows this transaction for ease of accounting.
+Goods sold being returned is quite a common practice in Business. They could be returned by the customer on quality issues, non-delivery on agreed date, or any other reason. Owrang allows this transaction for ease of accounting.
 
 > Stock > Stock Entry > New Stock Entry
 

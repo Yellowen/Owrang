@@ -21,7 +21,7 @@
 
 At end of the sales and purchase cycle is billing and payments. You may have an accountant in your team, or you may be doing accounting yourself or you may have outsourced your accounting. Financial accounting forms the core of any business management system like an ERP.
 
-In ERPNext, your accounting operations consists of 3 main transactions:
+In Owrang, your accounting operations consists of 3 main transactions:
 
 - Sales Invoice: The bills that you raise to your Customers for the products or services you provide. 
 - Purchase Invoice: Bills that your Suppliers give you for their products or services. 
@@ -52,7 +52,7 @@ Another important concept to understand in Accounting is accrual. This is import
 
 For example you buy X from a Supplier and your Supplier sends you a bill and expects you to pay in, for example, seven days. Even if you have not yet paid your Supplier, your expense must be booked immediately. This expense is booked against a group of Accounts called “Accounts Payable” that is the sum of all your outstanding dues to your Suppliers. This is called accrual. When you pay your Supplier, you will cancel his dues and update your bank account.
 
-ERPNext works on an accrual system. The transactions that accrue income and expense are Sales Invoice and Purchase Invoice.
+Owrang works on an accrual system. The transactions that accrue income and expense are Sales Invoice and Purchase Invoice.
 
-In retail, typically, delivery and payment happens at the same time. To cover this scenario, we have in ERPNext a POS Invoice (POS = Point of Sales). More on that later.
+In retail, typically, delivery and payment happens at the same time. To cover this scenario, we have in Owrang a POS Invoice (POS = Point of Sales). More on that later.
 

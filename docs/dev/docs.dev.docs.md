@@ -1,9 +1,9 @@
 ---
 {
-	"_label": "How to Build ERPNext Documentation"
+	"_label": "How to Build Owrang Documentation"
 }
 ---
-This page explains how to build the ERPNext documentation.
+This page explains how to build the Owrang documentation.
 
 The documentation sources are in the [`docs` folder of the erpnext repository](https://github.com/webnotes/erpnext/tree/master/docs). The source files are in markdown format and they have a custom header that is separated by `---`
 
@@ -13,7 +13,7 @@ The header contains the title of the page and sub pages (table of contents) in a
 
 	---
 	{
-		"_label": "How to Build ERPNext Documentation"
+		"_label": "How to Build Owrang Documentation"
 	}
 	---
 	
@@ -37,7 +37,7 @@ Table of contents is added by setting the `_toc` property as below:
 	
 ## Building the Output pages
 
-Once the sources have been edited / updated, to build the documentation, login into your local ERPNext account.
+Once the sources have been edited / updated, to build the documentation, login into your local Owrang account.
 
 1. Open __Documenation Tool__ by adding `#Form/Documentation Tool` to the address bar.
 1. Check on all the pages to be generated

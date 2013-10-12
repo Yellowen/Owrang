@@ -1,4 +1,4 @@
-# Contributing to ERPNext
+# Contributing to Owrang
 
 ## Reporting issues
 
@@ -8,13 +8,13 @@ We only accept issues that are bug reports or feature requests. Bugs must be iso
 
 ### Issues
 
-1. **Share as much information as possible.** Include operating system and version, browser and version, when did you last update ERPNext, how is it customized, etc. where appropriate. Also include steps to reproduce the bug.
+1. **Share as much information as possible.** Include operating system and version, browser and version, when did you last update Owrang, how is it customized, etc. where appropriate. Also include steps to reproduce the bug.
 1. Consider adding screenshots annotated with what goes wrong.
 1. If you are reporting an issue from the browser, Open the Javascript Console and paste us any error messages you see.
 
 ### Feature Requests
 
-1. We need as much information you can to consider a feature request. 
+1. We need as much information you can to consider a feature request.
 1. Think about **how** you want us to build the feature. Consider including:
 	1. Mockups (wireframes of features)
 	1. Screenshots (annotated with what should change)

@@ -81,7 +81,7 @@
   "width": "50%"
  }, 
  {
-  "description": "Enter static url parameters here (Eg. sender=ERPNext, username=ERPNext, password=1234 etc.)", 
+  "description": "Enter static url parameters here (Eg. sender=Owrang, username=Owrang, password=1234 etc.)", 
   "doctype": "DocField", 
   "fieldname": "static_parameter_details", 
   "fieldtype": "Table", 

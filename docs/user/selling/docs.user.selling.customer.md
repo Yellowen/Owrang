@@ -23,7 +23,7 @@ or upload it via the Data Import Tool.
 
 ### Contacts and Addresses
 ￼
-Contacts and Addresses in ERPNext are stored separately so that you can attach multiple Contacts or Addresses to Customers and Suppliers.
+Contacts and Addresses in Owrang are stored separately so that you can attach multiple Contacts or Addresses to Customers and Suppliers.
 
 To add a Contact or Address directly from the Customer record, click on “New Contact” or “New Address”.
 
@@ -33,9 +33,9 @@ To Import multiple Contacts and Addresses from a spreadsheet, use the Data Impor
 
 ### Integration with Accounts
 
-In ERPNext, there is a separate Account record for each Customer, for each Company.
+In Owrang, there is a separate Account record for each Customer, for each Company.
 
-When you create a new Customer, ERPNext will automatically create an Account Ledger for the Customer under “Accounts Receivable” in the Company set in the Customer record. 
+When you create a new Customer, Owrang will automatically create an Account Ledger for the Customer under “Accounts Receivable” in the Company set in the Customer record. 
 
 > Advanced Tip: If you want to change the Account Group under which the Customer Account is created, you can set it in the Company master.
 
@@ -49,7 +49,7 @@ You can set “Credit Days” so that it is automatically set in the Sales Invoi
 
 You can set how much credit you want to allow for a Customer by adding the “Credit Limit”. You can also set a global “Credit Limit” in the Company master.Classifying Customers
 
-ERPNext allows you to group your Customers and also divide them into Territories. Grouping will help you get better analysis of your data and identify which Customers are profitable and which are not. Territories will help you set sales targets for the respective territories.
+Owrang allows you to group your Customers and also divide them into Territories. Grouping will help you get better analysis of your data and identify which Customers are profitable and which are not. Territories will help you set sales targets for the respective territories.
 
 ### Customer Group
 

@@ -3,11 +3,11 @@
 	"_label": "Customize Form"
 }
 ---
-Please read  ERPNext Structure before you start customizing.
+Please read  Owrang Structure before you start customizing.
 
 You can Customize Forms by changing its layout, making certain fields mandatory, hiding others and changing permission levels on fields by going to:
 
-> Setup > Customize ERPNext > Customize Forms
+> Setup > Customize Owrang > Customize Forms
 
 
 ![Customize Forms](img/customize-form-1.png)

@@ -41,7 +41,7 @@ The “Packing List” table will be automatically updated when you “Save” t
 
 #### Reservation and Warehouses
 
-If your Sales Order contains Items for which inventory is tracked (Is Stock Item is “Yes”). ERPNext will ask you for “Reservation Warehouse”. If you have set a default Warehouse for the Item, it will automatically set this Warehouse here.
+If your Sales Order contains Items for which inventory is tracked (Is Stock Item is “Yes”). Owrang will ask you for “Reservation Warehouse”. If you have set a default Warehouse for the Item, it will automatically set this Warehouse here.
 
 This “reserved” quantity will help you project what is the quantity you need to purchase based on all your commitments.
 
@@ -49,7 +49,7 @@ This “reserved” quantity will help you project what is the quantity you need
 
 **Sales Partner:** If this Sale was booked via a Sales Partner, you can update the Sales Partner’s details with commission and other info that you can aggregate.
 
-**Sales Persons:** ERPNext allows you to tag multiple Sales Persons who may have worked on this deal. You can also split the amount in targets of different Sales Persons and track how much incentives they earned on this deal.
+**Sales Persons:** Owrang allows you to tag multiple Sales Persons who may have worked on this deal. You can also split the amount in targets of different Sales Persons and track how much incentives they earned on this deal.
 
 #### Next Steps
 

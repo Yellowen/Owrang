@@ -20,7 +20,7 @@ Before you start managing your Operations in EPRNext, you must first become fami
 
 ### Live Phase
 
-Once you are familiar with ERPNext, start entering your live data!
+Once you are familiar with Owrang, start entering your live data!
 
 - Clean up the account of test data or better, start a fresh install.
 - Setup all the modules with Customer Groups, Item Groups, Warehouses, BOMs etc.

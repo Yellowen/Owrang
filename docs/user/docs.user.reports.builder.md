@@ -3,9 +3,9 @@
 	"_label": "Report Builder"
 }
 ---
-All the data that you enter in ERPNext is stored in database tables. An easy way to visualize this is to imagine each type of data like Customer, Sales Invoice, Task is stored in a separate spreadsheets, each containing all the data included in one table.
+All the data that you enter in Owrang is stored in database tables. An easy way to visualize this is to imagine each type of data like Customer, Sales Invoice, Task is stored in a separate spreadsheets, each containing all the data included in one table.
 
-ERPNext gives you a simple tool called the Report Builder to extract data from these tables and show them in rows and columns where you can pick and choose which column to display and filter and sort the data by different parameters.
+Owrang gives you a simple tool called the Report Builder to extract data from these tables and show them in rows and columns where you can pick and choose which column to display and filter and sort the data by different parameters.
 
 To start a new report click on the “Report” menu in the top toolbar or on the list page of any transaction click on the “Build Report” button. For example, to make a report of Sales Invoices, go to
 

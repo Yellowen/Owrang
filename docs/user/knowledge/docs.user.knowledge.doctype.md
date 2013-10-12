@@ -6,7 +6,7 @@
 
 
 
-ERPNext is a based on a “metadata” (data about data) framework that helps define all the different types of documents in the system. The basic building block of ERPNext is a DocType. 
+Owrang is a based on a “metadata” (data about data) framework that helps define all the different types of documents in the system. The basic building block of Owrang is a DocType. 
 
 A DocType represents both a table in the database and a form from which a user can enter data. 
 
@@ -152,7 +152,7 @@ In the fields table, there are many columns, here is an explanation of the colum
 
 #### Field Types and Options
 
-Here is a list of the different types of fields used to make / customize forms in ERPNext.
+Here is a list of the different types of fields used to make / customize forms in Owrang.
 
 <table class="table table-bordered text-left">
 	<thead>
@@ -236,7 +236,7 @@ Here is a list of the different types of fields used to make / customize forms i
 		<tr>
 			<td>Section Break</td>
 			<td>Break into a new horizontal section.</td>
-			<td>The layout in ERPNext is evaluated from top to bottom.</td>
+			<td>The layout in Owrang is evaluated from top to bottom.</td>
 		</tr>
 		<tr>
 			<td>Column Break</td>

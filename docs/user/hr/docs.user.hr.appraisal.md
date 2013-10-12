@@ -3,7 +3,7 @@
 	"_label": "Appraisal"
 }
 ---
-In ERPNext, you can manage Employee Appraisals by creating an Appraisal Template for each role with the parameters that define the performance by giving appropriate weightage to each parameter.
+In Owrang, you can manage Employee Appraisals by creating an Appraisal Template for each role with the parameters that define the performance by giving appropriate weightage to each parameter.
 
 > HR > Appraisal > New Appraisal
 

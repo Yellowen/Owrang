@@ -28,7 +28,7 @@ wn.ui.misc.about = function() {
 
 		$(d.body).html(repl("<div>\
 		<p>Owrang is an open-source web based ERP made by Yellowen Inc and is a fork\
-                of Web Notes Technologies Pvt Ltd ERPNext.\
+                of Web Notes Technologies Pvt Ltd Owrang.\
 		to provide an integrated tool to manage most processes in a small organization.\
 		For more information about Web Notes, or to buy hosting servies, go to \
 		<a href='https://owrang.yellowen.com'>https://owrang.yellowen.com</a>.</p>\

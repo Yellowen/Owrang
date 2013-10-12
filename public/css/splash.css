@@ -30,7 +30,7 @@
 	height: 160px;
 	text-align: center;
 	color: #888;
-	
+
 	animation-duration: 1s;
 	animation-name: pulse;
 	animation-iteration-count: infinite;
@@ -43,10 +43,10 @@
 }
 
 .splash:after {
-	content: "erpnext";
+	content: "owrang";
 	font-size: 30px;
 	font-weight: 700;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Tahoma,Helvetica, Arial, sans-serif;
 	position: relative;
 	top: -30px;
 }

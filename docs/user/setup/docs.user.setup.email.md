@@ -3,7 +3,7 @@
 	"_label": "Setting up Email"
 }
 ---
-Emails are the nervous system of business communication and ERPNext has been designed to make good use of this. 
+Emails are the nervous system of business communication and Owrang has been designed to make good use of this. 
 
 ## Sending Emails
 
@@ -32,7 +32,7 @@ Set your outgoing mail server settings here. These are the same settings you wou
 
 A very useful email integration is to sync the incoming emails from support inbox into Support Ticket, so that you can track, assign and monitor support issues.
 
-> **Case Study:** Here at ERPNext, we have regularly tracked incoming support issues via email at “support@erpnext.com”. At the time of writing we had answered more than 3000 tickets via this system.
+> **Case Study:** Here at Owrang, we have regularly tracked incoming support issues via email at “support@erpnext.com”. At the time of writing we had answered more than 3000 tickets via this system.
 
 To setup your Support integration, go to:
 
@@ -44,13 +44,13 @@ To setup your Support integration, go to:
 
 
 
-To make ERPNext pull emails from your mail box, enter the POP3 settings. (POP3 is a way of extracting emails from your mailbox. It should be fairly easy to find out what your POP3 settings are. If you have problems, contact your email service provider).
+To make Owrang pull emails from your mail box, enter the POP3 settings. (POP3 is a way of extracting emails from your mailbox. It should be fairly easy to find out what your POP3 settings are. If you have problems, contact your email service provider).
 If you want to setup an auto reply, check on the “Send Autoreply” box and whenever someone sends an email, an autoreply will be sent.
 Add a custom signature which you want to send with your replies. 
 
 ### Setting Auto-notification on Documents
 
-ERPNext allows you to automatically email documents on “Submission” to the contact mentioned in the document. To set this up, go to:
+Owrang allows you to automatically email documents on “Submission” to the contact mentioned in the document. To set this up, go to:
 
 > Setup > Tools > Enable / Disable Notifications.
 

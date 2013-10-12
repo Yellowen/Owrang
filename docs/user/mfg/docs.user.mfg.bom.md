@@ -3,7 +3,7 @@
 	"_label": "Bill of Materials"
 }
 ---
-At the heart of the Manufacturing system is the **Bill of Materials** (BOM). The **BOM** is a list of all materials (either bought or made) and operations that go into a finished product or sub-Item. In ERPNext, the component could have its own BOM hence forming a tree of Items with multiple levels.
+At the heart of the Manufacturing system is the **Bill of Materials** (BOM). The **BOM** is a list of all materials (either bought or made) and operations that go into a finished product or sub-Item. In Owrang, the component could have its own BOM hence forming a tree of Items with multiple levels.
 
 To make accurate Purchase Requests, you must always maintain correct BOMs. To make a new BOM:
 

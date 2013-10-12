@@ -21,7 +21,7 @@ The Chart of Accounts helps you to answer:
 
 > Tip: If you can’t read a Balance Sheet (I confess it took me a long time to figure this out) it's a good opportunity to start learning about this. It will be worth the effort. You can also take the help of your accountant to setup your Chart of Accounts.
 
-Financial statement of your company is easily viewable in ERPNext. An Example of a financial statement is given below:
+Financial statement of your company is easily viewable in Owrang. An Example of a financial statement is given below:
 
 
 
@@ -29,11 +29,11 @@ Financial statement of your company is easily viewable in ERPNext. An Example of
 
 
 
-To edit your Chart of Accounts in ERPNext go to:
+To edit your Chart of Accounts in Owrang go to:
 
 > [Accounts](docs.user.accounts.html)  > Chart of Accounts 
 
-Chart of Accounts is a tree view of the names of the Accounts  (Ledgers and Groups) that a Company requires to manage its books of accounts. ERPNext sets up a simple chart of accounts for each Company you create, but you have to modify it according to your needs and legal requirements.
+Chart of Accounts is a tree view of the names of the Accounts  (Ledgers and Groups) that a Company requires to manage its books of accounts. Owrang sets up a simple chart of accounts for each Company you create, but you have to modify it according to your needs and legal requirements.
 ￼
 For each company, Chart of Accounts signifies the way to classify the accounting entries, mostly based on statutory (tax, compliance to government regulations) requirements.
 
@@ -57,7 +57,7 @@ Profit and Loss is the group of Income and Expense accounts that represent your 
 
 Unlike Balance sheet accounts, Profit and Loss accounts (or PL accounts) do not represent net worth (assets), but rather represent the amount of money spent and collected in servicing customers during the period. Hence at the beginning and end of your Fiscal Year, they become zero.
 
-In ERPNext it is easy to create a Profit and Loss analysis chart. An example of a Profit and Loss analysis chart is given below:
+In Owrang it is easy to create a Profit and Loss analysis chart. An example of a Profit and Loss analysis chart is given below:
 
 
 
@@ -73,7 +73,7 @@ In ERPNext it is easy to create a Profit and Loss analysis chart. An example of 
 
 ### Groups and Ledgers
 
-There are two main kinds of Accounts in ERPNext - Group and Ledger. Groups can have sub-groups and ledgers within them, whereas ledgers are the leaf nodes of your chart and cannot be further classified.
+There are two main kinds of Accounts in Owrang - Group and Ledger. Groups can have sub-groups and ledgers within them, whereas ledgers are the leaf nodes of your chart and cannot be further classified.
 
 Accounting Transactions can only be made against Ledger Accounts (not Groups)
 
@@ -85,7 +85,7 @@ Accounting Transactions can only be made against Ledger Accounts (not Groups)
 
 ### Other Account Types
 
-In ERPNext, you can also specify more information when you create a new Account, this is there to help you select that particular account in a scenario like Bank Account or a Tax Account and has no effect on the Chart itself.
+In Owrang, you can also specify more information when you create a new Account, this is there to help you select that particular account in a scenario like Bank Account or a Tax Account and has no effect on the Chart itself.
 
 You can also tag if an account represents a Customer, Supplier or Employee in "Master Type".
 
@@ -97,7 +97,7 @@ To create new Accounts, explore your Chart of Accounts and click on an Account g
 
 Option to create will only appear if you click on a Group (folder) type Account.
 
-ERPNext creates a standard structure for you when the Company is created but it is up to you to modify or add or remove accounts.
+Owrang creates a standard structure for you when the Company is created but it is up to you to modify or add or remove accounts.
 
 Typically, you might want to create Accounts for
 
