@@ -7,69 +7,69 @@ import webnotes
 items = [
 	{
 		"type": "Section",
-		"title": "Organization",
+		"title": webnotes._("Organization"),
 		"icon": "icon-building"
 	},
-	{"doctype":"Company"}, 
-	{"doctype":"Fiscal Year"}, 
+	{"doctype":"Company"},
+	{"doctype":"Fiscal Year"},
 	{"doctype":"Currency", "filter": {"enabled": 1}},
 	{
 		"type": "Section",
-		"title": "Users and Permissions",
+		"title": webnotes._("Users and Permissions"),
 		"icon": "icon-user"
 	},
-	{ 
+	{
 		"doctype":"Profile",
-	}, 
-	{ 
+	},
+	{
 		"doctype":"Role",
-	}, 
-	{ "title": "Permission Manager", 
+	},
+	{ "title": webnotes._("Permission Manager"),
 		"route": "permission-manager", "type": "Link", "icon": "icon-shield" },
-	{ "title": "User Properties", 
+	{ "title": webnotes._("User Properties"),
 		"route": "user-properties", "type": "Link", "icon": "icon-user" },
 	{
 		"type": "Section",
-		"title": "Master Data",
+		"title": webnotes._("Master Data"),
 		"icon": "icon-star"
 	},
 	{
 		"doctype": "Item",
 		"dependencies": [
-			{"doctype":"Item Group", "tree": "Sales Browser"}, 
-			{"doctype":"Warehouse"}, 
-			{"doctype":"UOM"}, 
+			{"doctype":"Item Group", "tree": "Sales Browser"},
+			{"doctype":"Warehouse"},
+			{"doctype":"UOM"},
 			{"doctype":"Brand"},
-			{"doctype":"Price List"}, 
-			{ "title": "Stock Settings", 
+			{"doctype":"Price List"},
+			{ "title": webnotes._("Stock Settings"),
 				"route": "Form/Stock Settings", "type": "Link", "icon": "icon-cog" },
 		],
 	},
 	{
 		"doctype": "Customer",
 		"dependencies": [
-			{"doctype":"Customer Group", "tree": "Sales Browser"}, 
-			{"doctype":"Territory", "tree": "Sales Browser"}, 
-			{"doctype":"Sales Person", "tree": "Sales Browser"}, 
-			{"doctype":"Contact", "query": "select count(*) from `tabContact` where ifnull(customer, '')!=''"}, 
-			{"doctype":"Address", "query": "select count(*) from `tabAddress` where ifnull(customer, '')!=''"}, 
-			{ "title": "Selling Settings", 
+			{"doctype":"Customer Group", "tree": "Sales Browser"},
+			{"doctype":"Territory", "tree": "Sales Browser"},
+			{"doctype":"Sales Person", "tree": "Sales Browser"},
+			{"doctype":"Contact", "query": "select count(*) from `tabContact` where ifnull(customer, '')!=''"},
+			{"doctype":"Address", "query": "select count(*) from `tabAddress` where ifnull(customer, '')!=''"},
+			{ "title": webnotes._("Selling Settings"),
 				"route": "Form/Selling Settings", "type": "Link", "icon": "icon-cog" },
 		]
 	},
 	{
 		"doctype": "Supplier",
 		"dependencies": [
-			{"doctype":"Supplier Type"}, 
-			{"doctype":"Contact", "query": "select count(*) from `tabContact` where ifnull(supplier, '')!=''"}, 
-			{"doctype":"Address", "query": "select count(*) from `tabAddress` where ifnull(supplier, '')!=''"}, 
-			{ "title": "Buying Settings", 
+			{"doctype":"Supplier Type"},
+			{"doctype":"Contact", "query": "select count(*) from `tabContact` where ifnull(supplier, '')!=''"},
+			{"doctype":"Address", "query": "select count(*) from `tabAddress` where ifnull(supplier, '')!=''"},
+			{ "title": webnotes._("Buying Settings"),
 				"route": "Form/Buying Settings", "type": "Link", "icon": "icon-cog" },
 		]
 	},
 	{
 		"type": "Section",
-		"title": "Accounts",
+		"title": webnotes._("Accounts"),
 		"icon": "icon-money"
 	},
 	{
@@ -77,18 +77,18 @@ items = [
 		"tree": "Accounts Browser",
 		"dependencies": [
 			{
-				"title": "Bank Accounts",
+				"title": webnotes._("Bank Accounts"),
 				"doctype":"Account",
 				"filter": {"account_type": "Bank or Cash"}
-			}, 
+			},
 			{
-				"title": "Tax Accounts",
+				"title": webnotes._("Tax Accounts"),
 				"doctype":"Account",
 				"filter": {"account_type": "Tax"}
 			},
 		]
 	},
-	{ 
+	{
 		"doctype": "Cost Center",
 		"tree": "Accounts Browser",
 	},
@@ -96,27 +96,27 @@ items = [
 	{ "doctype": "Purchase Taxes and Charges Master" },
 	{ "doctype": "Shipping Rule" },
 	{ "doctype": "Currency Exchange" },
-	{ "title": "Accounts Settings", 
+	{ "title": webnotes._("Accounts Settings"),
 		"route": "Form/Accounts Settings", "type": "Link", "icon": "icon-cog" },
 	{
 		"type": "Section",
-		"title": "Opening Accounts and Stock",
+		"title": webnotes._("Opening Accounts and Stock"),
 		"icon": "icon-eye-open"
 	},
 	{ "doctype": "Stock Reconciliation" },
-	{ 
+	{
 		"doctype": "Journal Voucher",
-		"title": "Opening Accounting Entries",
+		"title": webnotes._("Opening Accounting Entries"),
 		"filter": {
 			"is_opening": "Yes"
 		}
 	},
 	{
 		"type": "Section",
-		"title": "Human Resource",
+		"title": webnotes._("Human Resource"),
 		"icon": "icon-group"
 	},
-	{ 
+	{
 		"doctype": "Employee",
 		"dependencies": [
 			{ "doctype": "Employment Type" },
@@ -132,7 +132,7 @@ items = [
 	{ "doctype": "Appraisal Template" },
 	{
 		"type": "Section",
-		"title": "Printing",
+		"title": webnotes._("Printing"),
 		"icon": "icon-print"
 	},
 	{ "doctype": "Terms and Conditions" },
@@ -141,40 +141,40 @@ items = [
 	{ "doctype": "Print Format", "filter": {"standard": "No"} },
 	{
 		"type": "Section",
-		"title": "Email",
+		"title": webnotes._("Email"),
 		"icon": "icon-envelope-alt"
 	},
-	{ 
-		"title": "Outgoing Email Settings",
+	{
+		"title": webnotes._("Outgoing Email Settings"),
 		"doctype": "Email Settings",
 		"single": 1,
 		"query": "select count(*) from tabSingles where doctype='Email Settings' and field='outgoing_mail_server'"
 	},
-	{ 
-		"title": "Support Email Settings",
+	{
+		"title": webnotes._("Support Email Settings"),
 		"doctype": "Email Settings",
 		"single": 1,
 		"query": "select count(*) from tabSingles where doctype='Email Settings' and field='support_host'"
 	},
-	{ 
+	{
 		"doctype": "Sales Email Settings",
 		"single": 1,
 		"query": "select count(*) from tabSingles where doctype='Sales Email Settings' and field='host'"
 	},
-	{ 
+	{
 		"doctype": "Jobs Email Settings",
 		"single": 1,
 		"query": "select count(*) from tabSingles where doctype='Jobs Email Settings' and field='host'"
 	},
-	{ 
+	{
 		"doctype": "Email Digest",
 	},
 	{
 		"type": "Section",
-		"title": "Customization",
+		"title": webnotes._("Customization"),
 		"icon": "icon-glass"
 	},
-	{ 
+	{
 		"doctype": "Customize Form",
 		"single": 1,
 		"query": "select count(distinct doc_type) from `tabProperty Setter`"
@@ -185,51 +185,51 @@ items = [
 	{ "doctype": "Custom Script" },
 	{
 		"type": "Section",
-		"title": "Tools",
+		"title": webnotes._("Tools"),
 		"icon": "icon-wrench"
 	},
-	{ "title": "Global Settings / Default Values", 
+	{ "title": webnotes._("Global Settings / Default Values"),
 		"doctype": "Global Defaults", "single": 1,
-	 	"query": """select count(*) from tabSingles where doctype='Global Defaults' 
-		and field not in ('owner', 'creation', 'modified', 'modified_by')"""},
-		
-	{ "title": "Show / Hide Features", 
-		"doctype": "Features Setup", "single": 1,
-	 	"query": """select count(*) from tabSingles where doctype='Features Setup' 
+	 	"query": """select count(*) from tabSingles where doctype='Global Defaults'
 		and field not in ('owner', 'creation', 'modified', 'modified_by')"""},
 
-	{ "title": "Enable / Disable Email Notifications", 
+	{ "title": webnotes._("Show / Hide Features"),
+		"doctype": "Features Setup", "single": 1,
+	 	"query": """select count(*) from tabSingles where doctype='Features Setup'
+		and field not in ('owner', 'creation', 'modified', 'modified_by')"""},
+
+	{ "title": webnotes._("Enable / Disable Email Notifications"),
 		"doctype": "Notification Control", "single": 1,
-	 	"query": """select count(*) from tabSingles where doctype='Notification Control' 
+	 	"query": """select count(*) from tabSingles where doctype='Notification Control'
 		and field in ('quotation', 'sales_order', 'sales_invoice', 'purchase_order', 'purchase_receipt', 'expense_claim', 'delivery_note')"""},
 
-	{ "doctype": "File Data", "title": "Uploaded File Attachments" },
-	{ 
-		"doctype": "SMS Settings", 
+	{ "doctype": "File Data", "title": webnotes._("Uploaded File Attachments") },
+	{
+		"doctype": "SMS Settings",
 		"single": 1,
 	 	"query": "select count(*) from tabSingles where doctype='SMS Settings' and field='sms_gateway_url'"
 	},
 
-	{ "title": "Data Import", 
+	{ "title": webnotes._("Data Import"),
 		"route": "data-import-tool", "type": "Link", "icon": "icon-upload" },
-	{ "title": "Bulk Rename", 
+	{ "title": webnotes._("Bulk Rename"),
 		"route": "Form/Rename Tool", "type": "Link", "icon": "icon-upload" },
-	{ "title": "Update Numbering Series", 
+	{ "title": webnotes._("Update Numbering Series"),
 		"route": "Form/Naming Series", "type": "Link", "icon": "icon-sort-by-order" },
-	{ "title": "Show / Hide Modules", 
+	{ "title": webnotes._("Show / Hide Modules"),
 		"route": "modules_setup", "type": "Link", "icon": "icon-th" },
-	{ "title": "Send Bulk SMS to Leads / Contacts", 
+	{ "title": webnotes._("Send Bulk SMS to Leads / Contacts"),
 		"route": "Form/SMS Center", "type": "Link", "icon": "icon-mobile-phone" },
 	{
 		"type": "Section",
-		"title": "System Administration",
+		"title": webnotes._("System Administration"),
 		"icon": "icon-cog"
 	},
-	{ "title": "Update Owrang", 
+	{ "title": webnotes._("Update Owrang"),
 		"route": "update-manager", "type": "Link", "icon": "icon-rss" },
-	{ "title": "Manage 3rd Party Backups", 
+	{ "title": webnotes._("Manage 3rd Party Backups"),
 		"route": "Form/Backup Manager", "type": "Link", "icon": "icon-cloud" },
-	{ "title": "System Scheduler Errors", 
+	{ "title": webnotes._("System Scheduler Errors"),
 		"route": "Report/Scheduler Log", "type": "Link", "icon": "icon-exclamation-sign" },
 ]
 
@@ -239,13 +239,13 @@ def get():
 		if item.get("type")=="Section":
 			continue
 		set_count(item)
-		
+
 		if item.get("dependencies"):
 			for d in item["dependencies"]:
 				set_count(d)
-		
+
 	return items
-	
+
 def set_count(item):
 	if "query" in item:
 		item["count"] = webnotes.conn.sql(item["query"])[0][0]
