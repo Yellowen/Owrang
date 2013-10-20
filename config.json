@@ -1,5 +1,5 @@
 {
-	"app_name": "ERPNext",
+	"app_name": "Owrang",
 	"base_template": "app/portal/templates/base.html",
 	"modules": {
 		"Selling": {
